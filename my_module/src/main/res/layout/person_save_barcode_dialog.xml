@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/money_transferdebt_dialogll"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/pxtodp242"
+    android:layout_gravity="center"
+    android:layout_marginLeft="@dimen/pxtodp60"
+    android:layout_marginRight="@dimen/pxtodp60"
+    android:background="@drawable/money_transfer_dialogbg"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/dialogName_tv"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/pxtodp130"
+            android:gravity="center"
+            android:textColor="@color/register_success_reward"
+            android:textSize="@dimen/pxtosp36"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1px"
+            android:layout_above="@+id/dialog_bottom_bns"
+            android:background="@color/line" />
+
+        <LinearLayout
+            android:id="@+id/dialog_bottom_bns"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/pxtodp100"
+            android:layout_alignParentBottom="true"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/transfer_ok_bn"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:background="@drawable/money_nocolor_dialogbg"
+                android:gravity="center"
+                android:textColor="@color/money_dialog_blue_text"
+                android:textSize="@dimen/pxtosp36" />
+
+            <View
+                android:layout_width="1px"
+                android:layout_height="fill_parent"
+                android:background="@color/line" />
+
+            <Button
+                android:id="@+id/transfer_cancel_bn"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:background="@drawable/money_nocolor_dialogbg"
+                android:gravity="center"
+                android:textColor="@color/money_dialog_blue_text"
+                android:textSize="@dimen/pxtosp36" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

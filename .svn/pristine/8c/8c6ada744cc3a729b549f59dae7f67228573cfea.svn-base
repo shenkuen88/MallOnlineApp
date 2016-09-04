@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/pull_to_refresh_header"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content">
+
+    <View
+        android:id="@+id/view1"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/pxtodp30" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/view1">
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dip"
+            android:layout_marginTop="@dimen/pxtodp20"
+            android:layout_toLeftOf="@+id/pull_to_refresh_text">
+
+            <ProgressBar
+                android:id="@+id/pull_to_refresh_progress"
+                android:layout_width="@dimen/pxtodp40"
+                android:layout_height="@dimen/pxtodp40"
+                android:layout_gravity="center"
+                android:indeterminate="true"
+                android:indeterminateDrawable="@drawable/loading_progress_img"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/pull_to_refresh_image"
+                android:layout_width="@dimen/pxtodp40"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginBottom="10dp"
+                android:layout_marginRight="5dp"
+                android:gravity="right"
+                android:src="@mipmap/pulltorefresh_arrow"
+                android:visibility="visible" />
+        </FrameLayout>
+
+
+        <TextView
+            android:id="@+id/pull_to_refresh_text"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center_horizontal"
+            android:text="@string/pull_to_refresh_pull_label"
+            android:textColor="@color/register_text" />
+
+        <TextView
+            android:id="@+id/pull_to_refresh_updated_at"
+            android:layout_width="fill_parent"
+            android:layout_height="30dip"
+            android:layout_below="@+id/pull_to_refresh_text"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text=""
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:visibility="gone" />
+
+    </RelativeLayout>
+</RelativeLayout>

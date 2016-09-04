@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/pxtodp246"
+                android:gravity="center_vertical"
+                android:orientation="vertical"
+                android:paddingBottom="@dimen/pxtodp24"
+                android:paddingLeft="@dimen/pxtodp32"
+                android:paddingTop="@dimen/pxtodp24">
+
+    <ImageView
+        android:id="@+id/ivIcon"
+        android:layout_width="@dimen/pxtodp200"
+        android:layout_height="@dimen/pxtodp200"
+        android:layout_marginRight="@dimen/pxtodp28"
+        android:src="@drawable/default_bg"/>
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/ivIcon"
+        android:text="@string/no_data_show_short_text"
+        android:textColor="@color/register_black_text"
+        android:textSize="@dimen/pxtosp26"/>
+
+    <LinearLayout
+        android:id="@+id/llRating"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvTitle"
+        android:layout_marginTop="@dimen/pxtodp16"
+        android:layout_toRightOf="@+id/ivIcon"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <RatingBar
+            android:id="@+id/star_rb"
+            style="@style/myRatingBar"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/pxtodp48"
+            android:layout_centerVertical="true"
+            android:numStars="5"
+            android:progressDrawable="@drawable/room_first_rating_bar"
+            android:rating="5"
+            android:stepSize="1"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/pxtodp26"
+            android:text="5.0"
+            android:textColor="#f5a823"
+            android:textSize="@dimen/pxtosp32"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvCost"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/llRating"
+        android:layout_marginTop="@dimen/pxtodp16"
+        android:layout_toRightOf="@+id/ivIcon"
+        android:text="@string/no_data_show_short_text"
+        android:textSize="@dimen/pxtosp32"
+        android:textStyle="bold"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignBottom="@+id/ivIcon"
+        android:layout_below="@+id/tvCost"
+        android:layout_toRightOf="@+id/ivIcon"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tvDes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/tvNum"
+            android:gravity="left"
+            android:text="@string/no_data_show_short_text"
+            android:textSize="@dimen/pxtosp30"/>
+
+        <TextView
+            android:id="@+id/tvNum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/pxtodp30"
+            android:gravity="right"
+            android:text="@string/no_data_show_short_text"
+            android:textSize="@dimen/pxtosp24"/>
+    </RelativeLayout>
+
+</RelativeLayout>

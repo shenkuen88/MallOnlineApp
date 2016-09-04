@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/app_add_friend_dialog_bg"
+              android:fitsSystemWindows="true"
+              android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/pxtodp1"/>
+
+    <include
+        android:id="@+id/common_back"
+        layout="@layout/layout_top"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/pxtodp24"
+        android:background="@color/white_color"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/pxtodp30">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/pxtodp30"
+                android:text="账号"
+                android:textColor="@color/title_black"
+                android:textSize="@dimen/pxtodp30"/>
+
+            <cn.nj.www.my_module.view.ClearEditText
+                android:id="@+id/app_login_name_et"
+                style="@style/register_input_user_infos_et"
+                android:hint="请输入账号"
+                android:paddingRight="@dimen/pxtodp24"/>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/pxtodp1"
+            android:background="@drawable/line_view"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginRight="@dimen/pxtodp30"
+                android:gravity="center_vertical"
+                android:text="密码"
+                android:textColor="@color/title_black"
+                android:textSize="@dimen/pxtodp30"/>
+
+            <cn.nj.www.my_module.view.ClearPasswordEditText
+                android:id="@+id/app_login_psd_et"
+                style="@style/register_input_user_infos_et"
+                app:hint="请输入密码"
+                android:inputType="textPassword"
+                />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/app_login_bn"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/pxtodp90"
+        android:layout_marginLeft="@dimen/pxtodp30"
+        android:layout_marginRight="@dimen/pxtodp30"
+        android:layout_marginTop="@dimen/pxtodp54"
+        android:background="@drawable/common_pink_bn"
+        android:text="登录"
+        android:textColor="@color/white_color"
+        android:textSize="@dimen/pxtosp34"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+
+        <TextView
+            android:id="@+id/app_register_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/pxtodp30"
+            android:paddingTop="@dimen/pxtodp38"
+            android:text="手机快速注册"
+            android:textColor="@color/title_black"
+            android:textSize="@dimen/pxtosp30"/>
+
+        <View
+            android:layout_width="@dimen/pxtodp0"
+            android:layout_height="@dimen/pxtodp1"
+            android:layout_weight="1"/>
+
+        <TextView
+            android:id="@+id/app_forget_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/pxtodp30"
+            android:text="找回密码"
+            android:textColor="@color/title_black"
+            android:textSize="@dimen/pxtosp30"/>
+
+    </LinearLayout>
+</LinearLayout>

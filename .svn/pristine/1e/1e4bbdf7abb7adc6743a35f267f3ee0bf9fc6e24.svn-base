@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/common_back"
+        layout="@layout/layout_top"/>
+
+    <View
+        android:id="@+id/line1"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/pxtodp1"
+        android:layout_below="@+id/common_back"
+        android:background="@color/line"/>
+
+    <LinearLayout
+        android:id="@+id/content_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/line1"
+        android:orientation="vertical"
+        >
+
+        <ListView
+            android:id="@+id/lvBuy"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/transparent"
+            android:descendantFocusability="afterDescendants"
+            android:divider="@drawable/line_view"
+            android:dividerHeight="@dimen/pxtodp1"
+            android:overScrollMode="never"
+            android:paddingBottom="@dimen/pxtodp100"
+            android:scrollbars="none"
+            />
+
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/pxtodp100"
+        android:layout_alignParentBottom="true"
+        >
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/pxtodp1"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/line_view"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:paddingLeft="@dimen/pxtodp32"
+            android:singleLine="true"
+            android:text="好东西大家齐分享，赶紧来拼团吧"
+            android:textColor="@color/a9b"
+            android:textSize="@dimen/pxtosp28"/>
+
+        <Button
+            android:id="@+id/bnPublic"
+            android:layout_width="@dimen/pxtodp200"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_margin="@dimen/pxtodp20"
+            android:background="@drawable/pink_button"
+            android:singleLine="true"
+            android:text="我要发布"
+            android:textColor="@color/white"
+            android:textSize="@dimen/pxtosp28"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

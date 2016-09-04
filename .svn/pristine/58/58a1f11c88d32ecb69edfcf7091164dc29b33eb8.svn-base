@@ -1,0 +1,46 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/whole_bg"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/common_back"
+        layout="@layout/layout_top" />
+
+    <View
+        android:layout_width="match_parent"
+        android:background="@drawable/line_view"
+        android:layout_height="@dimen/pxtodp1"/>
+    <EditText
+        android:id="@+id/person_feedback_et"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/pxtodp185"
+        android:textColorHint="@color/txt_nol_col"
+        android:background="@color/white_color"
+        android:gravity="top|left"
+        android:hint="请写下您的宝贵意见和建议，我们将努力改进(不少于五个字)"
+        android:padding="@dimen/pxtodp24"
+        android:textSize="@dimen/pxtosp30" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/pxtodp1"
+        android:layout_marginLeft="@dimen/pxtodp24"
+        android:background="@color/line" />
+
+    <EditText
+        android:id="@+id/person_feedback_tel_et"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/pxtodp95"
+        android:background="@color/white_color"
+        android:hint="请留下您的电话号码，以便我们回复您"
+        android:padding="@dimen/pxtodp24"
+        android:inputType="number"
+        android:textColorHint="@color/txt_nol_col"
+        android:singleLine="true"
+        android:textSize="@dimen/pxtosp30" />
+
+
+</LinearLayout>

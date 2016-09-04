@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/app_img_bg_circle"
+    android:orientation="horizontal">
+
+    <Button
+        android:id="@+id/pm_minus"
+        android:layout_width="@dimen/pxtodp90"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/pxtodp4"
+        android:background="@null"
+        android:text="-"
+        android:textSize="@dimen/pxtodp40"></Button>
+
+    <View
+        android:layout_width="@dimen/pxtodp1"
+        android:layout_height="match_parent"
+        android:background="@color/line" />
+
+    <EditText
+        android:id="@+id/pm_number"
+        android:layout_width="@dimen/pxtodp110"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="@dimen/pxtodp2"
+        android:layout_marginTop="@dimen/pxtodp2"
+        android:background="@color/white"
+        android:gravity="center"
+        android:singleLine="true"
+        android:inputType="number"
+        android:text="1"></EditText>
+
+    <View
+        android:layout_width="@dimen/pxtodp1"
+        android:layout_height="match_parent"
+        android:background="@color/line" />
+
+    <Button
+        android:id="@+id/pm_plux"
+        android:layout_width="@dimen/pxtodp90"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/pxtodp4"
+        android:background="@null"
+        android:text="+"
+        android:textSize="@dimen/pxtodp40"></Button>
+
+</LinearLayout>

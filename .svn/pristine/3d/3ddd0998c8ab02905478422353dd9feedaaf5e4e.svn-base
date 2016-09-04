@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@mipmap/bj_home"
+            android:gravity="bottom"
+            android:orientation="horizontal"
+            android:paddingTop="@dimen/pxtodp120">
+
+            <LinearLayout
+                android:id="@+id/llScan"
+                style="@style/index_top_ll">
+
+                <ImageView
+                    style="@style/index_top_iv"
+                    android:src="@mipmap/scan"/>
+
+                <TextView
+                    style="@style/index_top_tv"
+                    android:text="扫一扫"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llPay"
+                style="@style/index_top_ll">
+
+                <ImageView
+                    style="@style/index_top_iv"
+                    android:src="@mipmap/pay_index"/>
+
+                <TextView
+                    style="@style/index_top_tv"
+                    android:text="付款"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llCoupon"
+                style="@style/index_top_ll">
+
+                <ImageView
+                    style="@style/index_top_iv"
+                    android:src="@mipmap/coupon_index"/>
+
+                <TextView
+                    style="@style/index_top_tv"
+                    android:text="卡券"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llrecondmend"
+                style="@style/index_top_ll">
+
+                <ImageView
+                    style="@style/index_top_iv"
+                    android:src="@mipmap/see_index"/>
+
+                <TextView
+                    style="@style/index_top_tv"
+                    android:text="瞎溜达"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+            <LinearLayout
+                android:id="@+id/llOnlineService"
+                style="@style/index_top_ll1">
+
+                <ImageView
+                    style="@style/index_top_iv1"
+                    android:src="@mipmap/online_index"/>
+
+                <TextView
+                    style="@style/index_top_tv1"
+                    android:text="线上服务"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llOfflineService"
+                style="@style/index_top_ll1">
+
+                <ImageView
+                    style="@style/index_top_iv1"
+                    android:src="@mipmap/offline_index"/>
+
+                <TextView
+                    style="@style/index_top_tv1"
+                    android:text="线下服务"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llSee"
+                style="@style/index_top_ll1">
+
+                <ImageView
+                    style="@style/index_top_iv1"
+                    android:src="@mipmap/zw_index"/>
+
+                <TextView
+                    style="@style/index_top_tv1"
+                    android:text="政务"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/pxtodp2"
+            android:background="@color/ef"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/pxtodp200"
+            android:orientation="horizontal">
+
+
+            <LinearLayout
+                android:id="@+id/llTeamBuy"
+                style="@style/index_top_ll1">
+
+                <ImageView
+                    style="@style/index_top_iv1"
+                    android:src="@mipmap/pt_index"/>
+
+                <TextView
+                    style="@style/index_top_tv1"
+                    android:text="共享拼团"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llReputation"
+                style="@style/index_top_ll1">
+
+                <ImageView
+                    style="@style/index_top_iv1"
+                    android:src="@mipmap/kb_index"/>
+
+                <TextView
+                    style="@style/index_top_tv1"
+                    android:text="口碑"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llJfMall"
+                style="@style/index_top_ll1">
+
+                <ImageView
+                    style="@style/index_top_iv1"
+                    android:src="@mipmap/jf_index"/>
+
+                <TextView
+                    style="@style/index_top_tv1"
+                    android:text="积分商城"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/pxtodp2"
+            android:background="#88d9d9d9"/>
+
+        <include
+            layout="@layout/line_view"/>
+
+        <cn.nj.www.my_module.view.banner.ConvenientBanner
+            android:id="@+id/index_banner"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/pxtodp176"/>
+
+        <include
+            layout="@layout/line_view"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/pxtodp90"
+            android:background="@color/white_color"
+            android:drawableLeft="@mipmap/like_index"
+            android:drawablePadding="@dimen/pxtodp28"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/pxtodp30"
+            android:text="猜您喜欢"
+            android:textColor="@color/register_black_text"
+            android:textSize="@dimen/pxtosp30"/>
+
+        <cn.nj.www.my_module.view.MyListView
+            android:id="@+id/lvIndex"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </cn.nj.www.my_module.view.MyListView>
+    </LinearLayout>
+
+
+</ScrollView>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/pxtodp238"
+            android:background="@drawable/pink_bg">
+
+            <ImageView
+                android:id="@+id/ivIcon1"
+                android:layout_width="@dimen/pxtodp100"
+                android:layout_height="@dimen/pxtodp100"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="@dimen/pxtodp16"
+                android:layout_marginLeft="@dimen/pxtodp20"
+                android:layout_marginRight="@dimen/pxtodp26"
+                android:background="@color/white"
+                android:padding="@dimen/pxtodp2"
+                android:scaleType="fitXY"
+                android:src="@drawable/default_bg"/>
+
+            <TextView
+                android:id="@+id/tvName1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/ivIcon1"
+                android:layout_marginBottom="@dimen/pxtodp8"
+                android:layout_toRightOf="@+id/ivIcon1"
+                android:paddingTop="@dimen/pxtodp4"
+                android:text="--"
+                android:textColor="@color/white"/>
+
+            <TextView
+                android:id="@+id/tvNum1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvName1"
+                android:layout_marginBottom="@dimen/pxtodp8"
+                android:layout_toRightOf="@+id/ivIcon1"
+                android:paddingTop="@dimen/pxtodp4"
+                android:text="店铺号:--"
+                android:textColor="@color/white"/>
+
+            <Button
+                android:id="@+id/bnFavourite"
+                android:layout_width="@dimen/pxtodp106"
+                android:layout_height="@dimen/pxtodp50"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_margin="@dimen/pxtodp24"
+                android:background="@drawable/app_white_dialog_bn"
+                android:text="关注"
+                android:textColor="@color/app_color"
+                android:textSize="@dimen/pxtosp26"/>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/allContentll"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

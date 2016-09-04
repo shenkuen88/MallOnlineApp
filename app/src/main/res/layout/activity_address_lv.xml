@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/whole_bg"
+              android:orientation="vertical">
+
+
+    <include
+        android:id="@+id/common_back"
+        layout="@layout/layout_top"/>
+
+    <RelativeLayout
+        android:id="@+id/app_location_no_rl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/app_show_no_location_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/pxtodp146"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/pxtodp24"
+            android:text="不显示位置"
+            android:textColor="#6D7684"/>
+
+        <CheckBox
+            android:id="@+id/app_location_checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/pxtodp30"
+            android:checked="true"
+            android:gravity="right"
+            />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/pxtodp1"
+        android:background="@color/line"/>
+
+    <LinearLayout
+        android:id="@+id/app_location_loading_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/pxtodp24"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ProgressBar
+            android:id="@+id/app_loading_pb"
+            style="?android:attr/progressBarStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/app_loading_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="正在搜索附近的位置"/>
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/app_location_lv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:choiceMode="singleChoice"
+        android:divider="@color/line"
+        android:dividerHeight="@dimen/pxtodp1">
+
+    </ListView>
+</LinearLayout>

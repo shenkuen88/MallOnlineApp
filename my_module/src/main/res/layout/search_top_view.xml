@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="36dp"
+              android:layout_marginBottom="8dp"
+              android:layout_marginTop="8dp"
+              android:background="@color/white"
+              android:gravity="center_vertical"
+              android:orientation="horizontal">
+
+    <ImageView
+        android:id="@+id/finish_iv"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_centerVertical="true"
+        android:paddingLeft="@dimen/pxtodp20"
+        android:paddingRight="@dimen/pxtodp10"
+        android:src="@mipmap/app_title_back"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/home_top_search"
+        android:gravity="center_vertical">
+
+
+        <ImageView
+            android:id="@+id/search_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/pxtodp20"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:scaleType="center"
+            android:src="@mipmap/ic_search"
+            tools:ignore="ContentDescription"/>
+
+        <EditText
+            android:id="@+id/et_search"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@+id/search_iv"
+            android:background="@null"
+            android:gravity="center_vertical"
+            android:hint="@string/hint_search_content"
+            android:imeOptions="actionSearch"
+            android:inputType="text"
+            android:singleLine="true"
+            android:textColor="@color/gray"
+            android:textColorHint="@color/gray"
+            android:textSize="14sp"
+            tools:ignore="RtlHardcoded"/>
+
+        <ImageView
+            android:id="@+id/iv_search_clear"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignRight="@+id/et_search"
+            android:paddingLeft="12dp"
+            android:paddingRight="8dp"
+            android:src="@mipmap/ic_search_clear"
+            tools:ignore="ContentDescription"/>
+    </RelativeLayout>
+</LinearLayout>

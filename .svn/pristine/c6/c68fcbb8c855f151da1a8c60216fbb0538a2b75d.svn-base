@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grid_state_focused">
+
+    <LinearLayout
+        android:id="@+id/ll_popup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="@dimen/pxtodp20"
+        android:layout_marginRight="@dimen/pxtodp20"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/pxtodp16"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/pxtodp86"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/item_popupwindows_camera"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/pxtodp86"
+                    android:layout_weight="1"
+                    android:background="@drawable/app_white_dialog_top"
+                    android:gravity="center"
+                    android:paddingLeft="@dimen/pxtodp16"
+                    android:text="@string/attach_take_pic"
+                    android:textColor="@color/app_blue2"
+                    android:textSize="@dimen/pxtosp40" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/pxtodp32"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/line" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/pxtodp86"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/item_popupwindows_Photo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/pxtodp86"
+                    android:layout_weight="1"
+                    android:background="@drawable/app_white_dialog_bottom"
+                    android:gravity="center"
+                    android:paddingLeft="@dimen/pxtodp16"
+                    android:text="相册"
+                    android:textColor="@color/app_blue2"
+                    android:textSize="@dimen/pxtosp40" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/pxtodp32"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1px" />
+
+        <Button
+            android:id="@+id/item_popupwindows_cancel"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/pxtodp100"
+            android:layout_marginBottom="@dimen/pxtodp30"
+            android:background="@drawable/app_white_dialog"
+            android:text="取消"
+            android:textColor="#FE3824"
+            android:textSize="@dimen/pxtosp40" />
+    </LinearLayout>
+
+</RelativeLayout>

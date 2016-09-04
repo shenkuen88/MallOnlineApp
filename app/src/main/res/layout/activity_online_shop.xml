@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/white"
+              android:orientation="vertical">
+
+    <LinearLayout
+                  android:layout_width="match_parent"
+                  android:id="@+id/topView"
+                  android:layout_height="36dp"
+                  android:layout_marginBottom="8dp"
+                  android:layout_marginTop="8dp"
+                  android:background="@color/white"
+                  android:gravity="center_vertical"
+                  android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/finish_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:paddingLeft="@dimen/pxtodp20"
+            android:paddingRight="@dimen/pxtodp10"
+            android:src="@mipmap/app_title_back"/>
+
+        <RelativeLayout
+
+            android:layout_width="match_parent"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:layout_height="36dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/home_top_search"
+            android:gravity="center_vertical">
+
+
+            <ImageView
+                android:id="@+id/search_iv"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/pxtodp20"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:scaleType="center"
+                android:src="@mipmap/ic_search"
+                tools:ignore="ContentDescription"/>
+
+            <TextView
+                android:id="@+id/et_search"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_toRightOf="@+id/search_iv"
+                android:background="@null"
+                android:gravity="center_vertical"
+                android:hint="@string/hint_search_content"
+                android:imeOptions="actionSearch"
+                android:inputType="text"
+                android:singleLine="true"
+                android:textColor="@color/gray"
+                android:textColorHint="@color/gray"
+                android:textSize="14sp"
+                tools:ignore="RtlHardcoded"/>
+
+            <ImageView
+                android:id="@+id/iv_search_clear"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignRight="@+id/et_search"
+                android:paddingLeft="12dp"
+                android:paddingRight="8dp"
+                android:src="@mipmap/ic_search_clear"
+                tools:ignore="ContentDescription"/>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <cn.nj.www.my_module.view.NoScrollViewPager
+        android:id="@+id/my_viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+    </cn.nj.www.my_module.view.NoScrollViewPager>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="51dp"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/line"></View>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tvIndex"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="店铺首页"
+                android:textColor="@color/app_color"
+                />
+
+
+            <View
+                android:layout_width="@dimen/pxtodp2"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="@dimen/pxtodp6"
+                android:layout_marginTop="@dimen/pxtodp6"
+                android:background="@color/line"/>
+
+            <TextView
+                android:id="@+id/tvAllProduct"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="全部商品"
+                android:textColor="@color/register_black_text"
+                />
+
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

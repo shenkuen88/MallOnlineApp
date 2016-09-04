@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white_color"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/common_back"
+            layout="@layout/layout_top" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/pxtodp1"
+            android:background="@color/line" />
+
+        <ImageView
+            android:layout_width="@dimen/pxtodp200"
+            android:layout_height="@dimen/pxtodp200"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/pxtodp126"
+            android:scaleType="fitXY"
+            android:src="@mipmap/ic_launcher" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="中巢家庭俱乐部"
+            android:textColor="@color/register_black_text"
+            android:textSize="@dimen/pxtosp36" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/pxtodp1"
+            android:layout_marginLeft="@dimen/pxtodp34"
+            android:layout_marginRight="@dimen/pxtodp34"
+            android:layout_marginTop="@dimen/pxtodp60"
+            android:background="#cdcacd" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/pxtodp34"
+            android:layout_marginRight="@dimen/pxtodp34"
+            android:layout_marginTop="@dimen/pxtodp20"
+            android:lineSpacingExtra="0.36dp"
+            android:text="公司立足于家庭教育领域，依据国际先进的家庭教育资源和数字化和互联网技术的融合，构建家庭教育、消费、娱乐生态系统，为家庭教育、生活提供系统的解决方案。为家庭教育提供系统的教育内容和方法。同事汇聚用户、产品、销售、租赁、咨询、租赁、社群以及行为分析等多种业务形态，为家庭教育导航，为家长、孩子提供更直接有效的通道，为用户提供更互动的圈子和社会，同时，汇集平用户信息，形成家庭数据中心，为了更好的为广大用户服务，公司一致认为应该有一款app来帮助我们更好的实现我们与客户交流的目的。"
+            android:textColor="@color/register_black_text"
+            android:textSize="@dimen/pxtosp26" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/pxtodp1"
+            android:layout_marginLeft="@dimen/pxtodp34"
+            android:layout_marginRight="@dimen/pxtodp34"
+            android:layout_marginTop="@dimen/pxtodp60"
+            android:background="#cdcacd" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/pxtodp30"
+        android:gravity="center"
+        android:text="Copyright @ 2013-2016\n宁波腾视文化传媒股份有限公司 "
+        android:textColor="@color/txt_nol_col"
+        android:textSize="@dimen/pxtosp24" />
+</RelativeLayout>

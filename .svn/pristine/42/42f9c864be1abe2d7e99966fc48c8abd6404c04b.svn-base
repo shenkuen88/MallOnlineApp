@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/common_back"
+        layout="@layout/layout_top" />
+
+    <View
+        android:id="@+id/line1"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/pxtodp1"
+        android:layout_below="@+id/common_back"
+        android:background="@color/line" />
+
+
+    <LinearLayout
+        android:id="@+id/set_ll"
+        style="@style/setLL"
+        android:layout_below="@+id/line1">
+
+        <TextView
+            style="@style/setTV"
+            android:layout_weight="1"
+            android:text="消息提示音" />
+
+        <cn.nj.www.my_module.view.switchbn.SwitchButton
+            android:id="@+id/open_sound_bn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/pxtodp24" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/line2"
+        style="@style/marginLeft24Line"
+        android:layout_below="@+id/set_ll" />
+
+
+    <RelativeLayout
+        android:id="@+id/edit_password_rl"
+        style="@style/setLL"
+        android:layout_below="@+id/line2">
+
+        <TextView
+            style="@style/setTV"
+            android:layout_centerVertical="true"
+            android:text="修改密码" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/pxtodp22"
+            android:src="@mipmap/listright_arrow" />
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/line3"
+        style="@style/marginLeft24Line"
+        android:layout_below="@+id/edit_password_rl" />
+
+
+    <RelativeLayout
+        android:id="@+id/clear_rl"
+        style="@style/setLL"
+        android:layout_below="@+id/line3">
+
+        <TextView
+            style="@style/setTV"
+            android:layout_centerVertical="true"
+            android:text="清除本地缓存" />
+
+        <TextView
+            android:id="@+id/clear_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/pxtodp22"
+            android:drawablePadding="@dimen/pxtodp20"
+            android:textSize="@dimen/pxtosp32"
+            android:textColor="@color/set_left_text"
+            android:drawableRight="@mipmap/listright_arrow" />
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/view4"
+        android:layout_width="wrap_content"
+
+        android:layout_below="@+id/clear_rl"
+        android:layout_height="@dimen/pxtodp62"/>
+    <TextView
+        android:layout_marginLeft="@dimen/pxtodp24"
+        android:layout_marginRight="@dimen/pxtodp24"
+        android:layout_width="match_parent"
+        android:background="@drawable/pink_button"
+        android:layout_below="@+id/view4"
+        android:textColor="@color/white_color"
+        android:text="退出登录"
+        android:gravity="center"
+        android:textSize="@dimen/pxtosp36"
+        android:id="@+id/exit_tv"
+        android:layout_height="@dimen/pxtodp92" />
+    <View
+        android:layout_width="wrap_content"
+        android:layout_below="@+id/exit_tv"
+        android:layout_height="match_parent"/>
+</RelativeLayout>

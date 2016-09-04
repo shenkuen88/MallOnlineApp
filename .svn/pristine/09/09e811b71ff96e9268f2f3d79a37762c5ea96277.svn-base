@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/pxtodp24"
+        android:background="@color/app_add_friend_dialog_bg" />
+
+    <TextView
+        android:id="@+id/title_tv"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/pxtodp90"
+        android:background="@drawable/common_background"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/pxtodp30"
+        android:singleLine="true"
+        android:text="@string/no_data_show_short_text"
+        android:textColor="@color/register_black_text"
+        android:textSize="@dimen/pxtosp30" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/pxtodp1"
+        android:layout_marginLeft="@dimen/pxtodp30"
+        android:background="@color/line" />
+
+    <cn.nj.www.my_module.view.MyListView
+        android:id="@+id/good_lv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </cn.nj.www.my_module.view.MyListView>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/pxtodp1"
+        android:layout_marginLeft="@dimen/pxtodp30"
+        android:background="@color/line" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/pxtodp196"
+        android:gravity="right"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/pxtodp24"
+        android:paddingRight="@dimen/pxtodp30"
+        android:paddingTop="@dimen/pxtodp24">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="订单金额: "
+
+                android:textColor="@color/register_black_text" />
+
+            <TextView
+                android:id="@+id/order_pay_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="--"
+                android:textColor="@color/app_color"
+                android:textSize="@dimen/pxtosp34"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="运费: "
+                android:textColor="@color/register_black_text" />
+
+            <TextView
+                android:id="@+id/yf_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="--"
+                android:textColor="@color/app_color"
+                android:textSize="@dimen/pxtosp34"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="应付金额: "
+                android:textColor="@color/register_black_text" />
+
+            <TextView
+                android:id="@+id/total_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="--"
+                android:textColor="@color/app_color"
+                android:textSize="@dimen/pxtosp34"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

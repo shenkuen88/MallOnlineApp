@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/whole_bg"
+    android:orientation="vertical"
+>
+
+    <include
+        android:id="@+id/common_back"
+        layout="@layout/layout_top" />
+
+    <EditText
+        android:id="@+id/app_nickName_et"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/pxtodp100"
+        android:layout_marginTop="@dimen/pxtodp50"
+        android:paddingLeft="@dimen/pxtodp24"
+        android:background="@color/white_color"
+        android:textColorHint="@color/list_item_secondary_color"
+        android:textSize="@dimen/pxtosp34" />
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/pxtodp1"
+        android:background="@color/line" />
+
+
+</LinearLayout>
+

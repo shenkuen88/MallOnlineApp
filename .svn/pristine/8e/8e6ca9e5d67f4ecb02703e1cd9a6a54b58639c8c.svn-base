@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/pxtodp226"
+    android:id="@+id/item_rl"
+    android:paddingLeft="@dimen/pxtodp22"
+    android:paddingRight="@dimen/pxtodp24"
+    android:paddingTop="@dimen/pxtodp24">
+
+
+    <ImageView
+        android:id="@+id/good_iv"
+        android:layout_width="@dimen/pxtodp180"
+        android:layout_height="@dimen/pxtodp190"
+        android:scaleType="fitXY"
+        android:layout_marginRight="@dimen/pxtodp18"
+        android:background="@drawable/app_img_bg" />
+
+    <TextView
+        android:id="@+id/name_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/price_tv"
+        android:layout_alignTop="@+id/good_iv"
+        android:layout_toRightOf="@+id/good_iv"
+        android:ellipsize="end"
+        android:maxLines="3"
+        android:text="@string/no_data_show_long_text"
+        android:textColor="@color/register_black_text"
+        android:textSize="@dimen/pxtosp28" />
+
+    <TextView
+        android:id="@+id/comment_num_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/good_iv"
+        android:layout_toRightOf="@+id/good_iv"
+        android:text="@string/no_data_show_short_text"
+        android:textColor="@color/txt_nol_col"
+        android:textSize="@dimen/pxtosp24" />
+
+    <TextView
+        android:id="@+id/provider_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/good_iv"
+        android:layout_alignParentRight="true"
+        android:text="@string/no_data_show_short_text"
+        android:textColor="@color/txt_nol_col"
+        android:textSize="@dimen/pxtosp24" />
+
+    <TextView
+        android:id="@+id/price_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/comment_num_tv"
+        android:layout_marginBottom="@dimen/pxtodp18"
+        android:layout_toRightOf="@+id/good_iv"
+        android:text="@string/no_data_show_short_text"
+        android:textColor="@color/app_color"
+        android:textSize="@dimen/pxtosp24" />
+</RelativeLayout>

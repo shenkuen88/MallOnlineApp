@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/item_rl"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:minHeight="@dimen/pxtodp136"
+    android:paddingBottom="@dimen/pxtodp18"
+    android:paddingLeft="@dimen/pxtodp34"
+    android:paddingRight="@dimen/pxtodp34"
+    android:paddingTop="@dimen/pxtodp30">
+
+    <CheckBox
+        android:id="@+id/show"
+        android:layout_width="@dimen/pxtodp70"
+        android:layout_height="@dimen/pxtodp70"
+        android:layout_marginLeft="@dimen/pxtodp30"
+        android:background="@null"
+        android:layout_centerVertical="true"
+        android:button="@drawable/selector_check_bg"
+        android:checked="true"
+        android:paddingRight="@dimen/pxtodp30" />
+    <TextView
+        android:layout_toRightOf="@+id/show"
+        android:id="@+id/title_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:textColor="@color/register_black_text"
+        android:textSize="@dimen/pxtosp32" />
+
+    <TextView
+        android:id="@+id/community_tv"
+        android:layout_toRightOf="@+id/show"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/title_tv"
+        android:layout_marginTop="@dimen/pxtodp20"
+        android:layout_toLeftOf="@+id/time_tv"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:textSize="@dimen/pxtosp26" />
+
+    <TextView
+        android:id="@+id/time_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="@dimen/pxtodp6"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:textSize="@dimen/pxtosp24" />
+</RelativeLayout>

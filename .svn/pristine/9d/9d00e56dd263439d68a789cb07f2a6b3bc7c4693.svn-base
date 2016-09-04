@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_bg">
+
+    <include
+        android:id="@+id/common_back"
+        layout="@layout/layout_top" />
+
+    <View
+        android:id="@+id/line1"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/pxtodp1"
+        android:layout_below="@+id/common_back"
+        android:background="@color/line" />
+
+
+    <EditText
+        android:id="@+id/content_et"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/pxtodp180"
+        android:layout_below="@id/line1"
+        android:layout_marginTop="@dimen/pxtodp2"
+        android:background="@color/white_color"
+        android:gravity="top|left"
+        android:hint="请写下您的评价哦~"
+        android:paddingBottom="@dimen/pxtodp24"
+        android:paddingLeft="@dimen/pxtodp30"
+        android:paddingRight="@dimen/pxtodp30"
+        android:paddingTop="@dimen/pxtodp24"
+        android:singleLine="true"
+        android:textColor="@color/txt_nol_col"
+        android:textColorHint="@color/txt_nol_col"
+        android:textSize="@dimen/pxtosp32" />
+
+    <View
+        android:id="@+id/line2"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/pxtodp1"
+        android:layout_below="@+id/content_et"
+        android:background="@color/line" />
+
+    <RelativeLayout
+        android:id="@+id/voice_rl"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/pxtodp102"
+        android:layout_below="@+id/line2"
+        android:layout_marginBottom="@dimen/pxtodp20"
+        android:background="@color/white_color">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:paddingLeft="@dimen/pxtodp30"
+            android:singleLine="true"
+            android:text="评价也可以用语音哦"
+            android:textColor="@color/txt_nol_col"
+            android:textSize="@dimen/pxtosp30" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/pxtodp20"
+            android:src="@mipmap/voice_icon" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rating_rl"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/pxtodp102"
+        android:layout_below="@+id/gridview"
+        android:layout_marginBottom="@dimen/pxtodp20"
+        android:background="@color/white_color">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:paddingLeft="@dimen/pxtodp30"
+            android:singleLine="true"
+            android:text="订单打分"
+            android:textColor="@color/register_black_text"
+            android:textSize="@dimen/pxtosp30" />
+
+        <RatingBar
+            android:id="@+id/star_rb"
+            style="@style/myRatingBar"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/pxtodp48"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/pxtodp20"
+            android:numStars="5"
+            android:progressDrawable="@drawable/room_first_rating_bar"
+            android:rating="5"
+            android:stepSize="1" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/public_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rating_rl">
+
+        <Button
+            android:id="@+id/public_bn"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/pxtodp90"
+            android:layout_marginBottom="@dimen/pxtodp20"
+            android:layout_marginLeft="@dimen/pxtodp30"
+            android:layout_marginRight="@dimen/pxtodp30"
+            android:layout_marginTop="@dimen/pxtodp120"
+            android:background="@drawable/pink_button"
+            android:text="发表评论"
+            android:textColor="@color/white_color"
+            android:textSize="@dimen/pxtosp36" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/nm_rl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/public_ll"
+        android:layout_marginRight="@dimen/pxtodp30"
+        android:gravity="right">
+
+        <CheckBox
+            android:id="@+id/btn_ck"
+            android:layout_width="@dimen/pxtodp38"
+            android:layout_height="@dimen/pxtodp38"
+            android:layout_margin="10dp"
+            android:layout_toLeftOf="@+id/no_name_tv"
+            android:background="@drawable/selector_check_bg"
+            android:button="@null" />
+
+        <TextView
+            android:id="@+id/no_name_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="匿名评价"
+            android:textColor="@color/register_black_text"
+            android:textSize="@dimen/pxtodp28" />
+
+    </RelativeLayout>
+
+    <GridView
+        android:id="@+id/gridview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/voice_rl"
+        android:layout_marginBottom="@dimen/pxtodp20"
+        android:background="@color/white_color"
+        android:horizontalSpacing="3dp"
+        android:numColumns="4"
+        android:padding="@dimen/pxtodp10"
+        android:scrollbars="none"
+        android:verticalSpacing="5dp"
+
+        ></GridView>
+
+</RelativeLayout>

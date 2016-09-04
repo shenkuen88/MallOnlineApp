@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/pxtodp270"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/pw_zh_tv"
+        android:background="@drawable/common_background"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/pxtodp20"
+        android:text="综合排序" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/pxtodp1"
+        android:background="@color/line" />
+
+    <TextView
+        android:id="@+id/pw_hp_tv"
+        android:layout_width="match_parent"
+        android:background="@drawable/common_background"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/pxtodp20"
+        android:text="按好评排序" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/pxtodp1"
+        android:background="@color/line" />
+
+    <TextView
+        android:id="@+id/pw_time_tv"
+        android:background="@drawable/common_background"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/pxtodp20"
+        android:text="按上架时间排序" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/pxtodp1"
+        android:background="@color/line" />
+</LinearLayout>

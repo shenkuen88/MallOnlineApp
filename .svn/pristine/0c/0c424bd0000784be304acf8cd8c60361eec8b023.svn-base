@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white_color"
+    android:orientation="vertical">
+
+    <View
+        android:id="@+id/line1"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/pxtodp1"
+        android:background="@color/line"/>
+
+    <LinearLayout
+        android:id="@+id/content_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ListView
+            android:id="@+id/address_lv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/bottom_ll"
+            android:layout_below="@+id/line1"
+            android:background="@color/transparent"
+            android:descendantFocusability="afterDescendants"
+            android:divider="@drawable/line_view"
+            android:dividerHeight="@dimen/pxtodp1"
+            android:overScrollMode="never"
+            android:scrollbars="none"/>
+    </LinearLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/pxtodp1"
+        android:layout_above="@+id/bottom_ll"
+        android:background="@color/line"/>
+
+    <LinearLayout
+        android:id="@+id/bottom_ll"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/pxtodp92"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/all_tv"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="全选"
+            android:textColor="@color/register_black_text"
+            android:textSize="@dimen/pxtosp32"/>
+
+        <View
+            android:layout_width="@dimen/pxtodp1"
+            android:layout_height="match_parent"
+            android:background="@color/line"/>
+
+        <TextView
+            android:id="@+id/delete_tv"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="删除"
+            android:textColor="@color/register_black_text"
+            android:textSize="@dimen/pxtosp32"/>
+    </LinearLayout>
+
+    <include
+        android:id="@+id/no_history"
+        layout="@layout/listview_empty"/>
+</RelativeLayout>

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_add_friend_dialog_bg"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/common_back"
+        layout="@layout/layout_top" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/pxtodp1"
+        android:background="@drawable/line_view" />
+
+    <RelativeLayout
+        android:layout_marginTop="@dimen/pxtodp24"
+        style="@style/mine_top_select_rl_no_padding">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/pxtodp20"
+            android:drawablePadding="@dimen/pxtodp5"
+            android:text="不需要发票"
+            android:textColor="@color/title_black"
+            android:textSize="@dimen/pxtodp30" />
+
+        <CheckBox
+            android:layout_alignParentRight="true"
+            android:id="@+id/bill_cb1"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="10dp"
+            android:background="@null"
+            android:checked="true"
+            android:button="@drawable/selector_check_bg"
+            android:focusable="true" />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/pxtodp1"
+        android:background="@drawable/line_view" />
+
+    <RelativeLayout
+        style="@style/mine_top_select_rl_no_padding">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/pxtodp20"
+            android:drawablePadding="@dimen/pxtodp5"
+            android:text="需要发票"
+            android:textColor="@color/title_black"
+            android:textSize="@dimen/pxtodp30" />
+
+        <CheckBox
+            android:layout_alignParentRight="true"
+            android:id="@+id/bill_cb2"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="10dp"
+            android:background="@null"
+            android:checked="false"
+            android:button="@drawable/selector_check_bg"
+            android:focusable="true" />
+
+    </RelativeLayout>
+
+
+
+    <Button
+        android:id="@+id/app_save_bn"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/pxtodp90"
+        android:layout_marginLeft="@dimen/pxtodp30"
+        android:layout_marginRight="@dimen/pxtodp30"
+        android:layout_marginTop="@dimen/pxtodp42"
+        android:background="@drawable/common_pink_bn"
+        android:gravity="center"
+        android:text="保存"
+        android:textColor="@color/white_color"
+        android:textSize="@dimen/pxtosp36" />
+
+
+
+
+</LinearLayout>
+

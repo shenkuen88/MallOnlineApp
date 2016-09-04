@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_bg"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/common_back"
+        layout="@layout/layout_top" />
+
+    <View
+        android:id="@+id/line1"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/pxtodp1"
+        android:background="@color/line" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/pxtodp90"
+        android:layout_marginBottom="@dimen/pxtodp20"
+        android:background="@color/white_color"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/pxtodp30"
+        android:text="退款类型"
+        android:textColor="@color/register_black_text"
+        android:textSize="@dimen/pxtosp34"></TextView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/pxtodp90"
+        android:layout_marginBottom="@dimen/pxtodp20"
+        android:background="@color/white_color"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/pxtodp30">
+
+        <TextView
+            android:id="@+id/reason_tv1"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/pxtodp90"
+            android:gravity="center_vertical"
+            android:text="退款原因"
+            android:textColor="@color/register_black_text"
+            android:textSize="@dimen/pxtosp34"></TextView>
+
+        <TextView
+            android:id="@+id/choose_reason_tv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/reason_tv1"
+            android:drawablePadding="@dimen/pxtodp12"
+            android:drawableRight="@mipmap/arrow_down"
+            android:gravity="center_vertical|right"
+            android:paddingRight="@dimen/pxtodp20"
+            android:text="请选择"
+            android:textColor="@color/txt_nol_col"
+            android:textSize="@dimen/pxtosp30" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/pxtodp90"
+        android:background="@color/white_color"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/pxtodp30">
+
+        <TextView
+            android:id="@+id/money_tv1"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/pxtodp90"
+            android:gravity="center_vertical"
+            android:text="退款金额"
+            android:textColor="@color/register_black_text"
+            android:textSize="@dimen/pxtosp34"></TextView>
+
+        <EditText
+            android:id="@+id/money_tv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/money_tv1"
+            android:background="@color/white_color"
+            android:gravity="center_vertical|right"
+            android:hint="请输入退款金额"
+            android:paddingLeft="@dimen/pxtodp20"
+            android:inputType="numberDecimal"
+            android:paddingRight="@dimen/pxtodp20"
+            android:textColor="@color/txt_nol_col"
+            android:textSize="@dimen/pxtosp30" />
+    </RelativeLayout>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/pxtodp50"
+        android:layout_marginBottom="@dimen/pxtodp8"
+        android:layout_marginRight="@dimen/pxtodp22"
+        android:gravity="right|center_vertical"
+        android:text="(最多--)"
+        android:id="@+id/max_tv"
+        android:textColor="@color/app_color"
+        android:textSize="@dimen/pxtosp24" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/pxtodp90"
+        android:background="@color/white_color"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/pxtodp30">
+
+        <TextView
+            android:id="@+id/explain_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/pxtodp90"
+            android:gravity="center_vertical"
+            android:text="退款说明"
+            android:textColor="@color/register_black_text"
+            android:textSize="@dimen/pxtosp34"></TextView>
+
+        <EditText
+            android:id="@+id/explain_et"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/explain_tv"
+            android:background="@color/white_color"
+            android:gravity="center_vertical|right"
+            android:hint="请输入退款说明"
+            android:paddingLeft="@dimen/pxtodp20"
+            android:paddingRight="@dimen/pxtodp20"
+            android:textColor="@color/txt_nol_col"
+            android:textSize="@dimen/pxtosp30" />
+    </RelativeLayout>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/pxtodp50"
+        android:layout_marginBottom="@dimen/pxtodp8"
+        android:layout_marginRight="@dimen/pxtodp22"
+        android:gravity="right|center_vertical"
+        android:text="(可不填)"
+        android:textColor="@color/app_color"
+        android:textSize="@dimen/pxtosp24" />
+
+    <EditText
+        android:id="@+id/content_et"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/pxtodp180"
+        android:layout_below="@id/line1"
+        android:layout_marginBottom="@dimen/pxtodp20"
+        android:layout_marginTop="@dimen/pxtodp2"
+        android:background="@color/white_color"
+        android:gravity="top|left"
+        android:hint="请写下您的评价哦~"
+        android:paddingBottom="@dimen/pxtodp24"
+        android:paddingLeft="@dimen/pxtodp30"
+        android:paddingRight="@dimen/pxtodp30"
+        android:paddingTop="@dimen/pxtodp24"
+        android:singleLine="true"
+        android:textColor="@color/txt_nol_col"
+        android:textColorHint="@color/txt_nol_col"
+        android:textSize="@dimen/pxtosp32"
+        android:visibility="gone" />
+
+
+    <GridView
+        android:id="@+id/gridview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/white_color"
+        android:horizontalSpacing="3dp"
+        android:numColumns="3"
+        android:padding="@dimen/pxtodp10"
+        android:scrollbars="none"
+        android:verticalSpacing="5dp"></GridView>
+</LinearLayout>

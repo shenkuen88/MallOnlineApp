@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/item_rl"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <CheckBox
+        android:id="@+id/show"
+        android:layout_width="@dimen/pxtodp70"
+        android:layout_height="@dimen/pxtodp70"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/pxtodp30"
+        android:background="@null"
+        android:button="@drawable/selector_check_bg"
+        android:checked="true"
+        android:paddingRight="@dimen/pxtodp30" />
+
+    <TextView
+        android:id="@+id/title_tv"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/pxtodp92"
+        android:layout_toRightOf="@+id/show"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/pxtodp30"
+        android:text="标题"
+        android:textColor="@color/register_black_text"
+        android:textSize="@dimen/pxtosp30" />
+
+    <View
+        android:id="@+id/line1"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/pxtodp1"
+        android:layout_below="@+id/title_tv"
+        android:layout_marginBottom="@dimen/pxtodp28"
+        android:layout_marginLeft="@dimen/pxtodp30"
+        android:layout_toRightOf="@+id/show"
+        android:background="@color/line" />
+
+    <TextView
+        android:id="@+id/content_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/line1"
+        android:layout_toRightOf="@+id/show"
+        android:gravity="center_vertical"
+        android:maxLines="3"
+        android:paddingBottom="@dimen/pxtodp20"
+        android:paddingLeft="@dimen/pxtodp30"
+        android:paddingRight="@dimen/pxtodp30"
+        android:paddingTop="@dimen/pxtodp20"
+        android:text="标题"
+        android:textColor="@color/register_black_text"
+        android:textSize="@dimen/pxtosp28" />
+
+    <TextView
+        android:id="@+id/communnity_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/content_tv"
+        android:layout_toLeftOf="@+id/time_tv"
+        android:layout_toRightOf="@+id/show"
+        android:gravity="center_vertical"
+        android:paddingBottom="@dimen/pxtodp20"
+        android:paddingLeft="@dimen/pxtodp30"
+        android:paddingRight="@dimen/pxtodp30"
+        android:paddingTop="@dimen/pxtodp20"
+        android:singleLine="true"
+        android:text="标题"
+        android:textColor="@color/register_black_text"
+        android:textSize="@dimen/pxtosp28" />
+
+    <TextView
+        android:id="@+id/time_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/content_tv"
+        android:gravity="center_vertical"
+        android:paddingBottom="@dimen/pxtodp20"
+        android:paddingLeft="@dimen/pxtodp30"
+        android:paddingRight="@dimen/pxtodp30"
+        android:paddingTop="@dimen/pxtodp20"
+        android:singleLine="true"
+        android:text="标题"
+        android:textColor="@color/register_black_text"
+        android:textSize="@dimen/pxtosp28" />
+
+</RelativeLayout>

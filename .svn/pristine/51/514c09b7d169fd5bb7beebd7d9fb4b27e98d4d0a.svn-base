@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/pxtodp348"
+    android:gravity="center_vertical"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:paddingRight="@dimen/pxtodp24">
+
+    <ImageView
+        android:layout_marginTop="@dimen/pxtodp34"
+        android:id="@+id/ivIcon"
+        android:layout_marginLeft="@dimen/pxtodp30"
+        android:layout_width="@dimen/pxtodp202"
+        android:layout_height="@dimen/pxtodp202"
+        android:paddingRight="@dimen/pxtodp24"
+        android:scaleType="fitXY"
+        android:src="@drawable/default_bg" />
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_toLeftOf="@+id/tvTime"
+        android:layout_marginRight="@dimen/pxtodp20"
+        android:ellipsize="end"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/ivIcon"
+        android:layout_alignTop="@+id/ivIcon"
+        android:singleLine="true"
+        android:text="@string/no_data_show_short_text"
+        android:textColor="@color/black"
+        android:textSize="@dimen/pxtosp30" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:gravity="right"
+        android:id="@+id/tvTime"
+        android:singleLine="true"
+        android:text="@string/no_data_show_short_text"
+        android:textColor="@color/txt_nol_col"
+        android:textSize="@dimen/pxtosp24" />
+    <TextView
+        android:id="@+id/tvDes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvTitle"
+        android:layout_marginTop="@dimen/pxtodp4"
+        android:layout_toRightOf="@+id/ivIcon"
+        android:maxLines="2"
+        android:text="@string/no_data_show_long_text"
+        android:textColor="@color/register_black_text"
+        android:textSize="@dimen/pxtosp26" />
+    <TextView
+        android:id="@+id/tvNum"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="@dimen/pxtodp14"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvDes"
+        android:layout_toRightOf="@+id/ivIcon"
+        android:text="@string/no_data_show_short_text"
+        android:singleLine="true"
+        android:textColor="@color/register_black_text"
+        android:textSize="@dimen/pxtosp26" />
+
+    <TextView
+        android:id="@+id/tvPrice"
+        android:layout_below="@+id/tvNum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/pxtodp12"
+        android:layout_toRightOf="@+id/ivIcon"
+        android:gravity="bottom"
+        android:singleLine="true"
+        android:text="@string/no_data_show_short_text"
+        android:textColor="@color/app_color"
+        android:textSize="@dimen/pxtosp34" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/tvPrice"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_toRightOf="@+id/tvPrice"
+        android:gravity="right"
+        android:singleLine="true"
+        android:text="@string/no_data_show_short_text"
+        android:textColor="@color/txt_nol_col"
+        android:textSize="@dimen/pxtosp24" />
+
+    <View
+        android:layout_width="match_parent"
+        android:background="@color/txt_nol_col"
+        android:layout_above="@+id/tvShow"
+        android:layout_height="@dimen/pxtodp1"/>
+    <TextView
+        android:id="@+id/tvShow"
+        android:layout_width="match_parent"
+        android:singleLine="true"
+        android:paddingLeft="@dimen/pxtodp30"
+        android:drawablePadding="@dimen/pxtodp24"
+        android:textSize="@dimen/pxtodp30"
+        android:textColor="@color/register_black_text"
+        android:text="@string/no_data_show_short_text"
+        android:gravity="center_vertical"
+        android:scrollHorizontally="true"
+    android:marqueeRepeatLimit="marquee_forever"
+    android:ellipsize="marquee"
+    android:drawableLeft="@mipmap/comment_icon"
+        android:layout_alignParentBottom="true"
+        android:layout_height="@dimen/pxtodp76" />
+</RelativeLayout>

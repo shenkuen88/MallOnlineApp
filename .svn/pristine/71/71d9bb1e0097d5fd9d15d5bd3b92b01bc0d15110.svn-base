@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@+id/llOnlineShop"
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/pxtodp244"
+                android:gravity="center_vertical"
+                android:orientation="vertical"
+                android:paddingRight="@dimen/pxtodp24"
+                android:paddingBottom="@dimen/pxtodp20"
+                android:paddingLeft="@dimen/pxtodp30"
+                android:paddingTop="@dimen/pxtodp30">
+
+    <ImageView
+        android:id="@+id/ivIcon"
+        android:layout_width="@dimen/pxtodp200"
+        android:layout_height="@dimen/pxtodp200"
+        android:layout_marginRight="@dimen/pxtodp24"
+        android:scaleType="fitXY"
+        android:src="@drawable/default_bg"/>
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/ivIcon"
+        android:textSize="@dimen/pxtodp30"
+        android:textColor="@color/register_black_text"
+        android:text="@string/no_data_show_short_text"/>
+
+    <TextView
+        android:id="@+id/tvContent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/tvNum"
+        android:layout_below="@+id/tvTitle"
+        android:layout_toRightOf="@+id/ivIcon"
+        android:ellipsize="end"
+        android:maxLines="3"
+        android:textColor="@color/txt_nol_col"
+        android:textSize="@dimen/pxtosp26"
+        android:text="@string/no_data_show_long_text"/>
+
+    <TextView
+        android:id="@+id/tvNum"
+        android:layout_width="wrap_content"
+        android:textSize="@dimen/pxtosp24"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:gravity="right"
+        android:text="@string/no_data_show_short_text"/>
+</RelativeLayout>

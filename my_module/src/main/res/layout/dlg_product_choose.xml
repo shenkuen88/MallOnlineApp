@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/cancel_iv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="@dimen/pxtodp64"
+        android:paddingRight="@dimen/pxtodp20"
+        android:paddingTop="@dimen/pxtodp24"
+        android:src="@mipmap/icon_cancel" />
+
+    <ImageView
+        android:id="@+id/product_iv"
+        android:layout_width="@dimen/pxtodp180"
+        android:layout_height="@dimen/pxtodp180"
+        android:layout_marginLeft="@dimen/pxtodp20"
+        android:layout_marginRight="@dimen/pxtodp18"
+        android:layout_marginTop="@dimen/pxtodp32"
+        android:background="@drawable/app_img_bg" />
+
+    <TextView
+        android:id="@+id/name_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/pxtodp36"
+        android:layout_toLeftOf="@+id/cancel_iv"
+        android:layout_toRightOf="@+id/product_iv"
+        android:maxLines="2"
+        android:text="@string/no_data_show_long_text"
+        android:textColor="@color/register_black_text"
+        android:textSize="@dimen/pxtosp30" />
+
+    <TextView
+        android:id="@+id/price_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/pxtodp130"
+        android:layout_toRightOf="@+id/product_iv"
+        android:singleLine="true"
+        android:text="@string/no_data_show_long_text"
+        android:textColor="@color/app_color"
+        android:textSize="@dimen/pxtosp30"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/choose_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/product_iv"
+        android:layout_toRightOf="@+id/product_iv"
+        android:singleLine="true"
+        android:text="已选"
+        android:textColor="@color/order_nol_col"
+        android:textSize="@dimen/pxtosp24"
+        />
+
+    <View
+        android:id="@+id/line1"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/pxtodp1"
+        android:layout_below="@+id/product_iv"
+        android:layout_marginTop="@dimen/pxtodp34"
+        android:background="@drawable/line_view" />
+
+    <TextView
+        android:id="@+id/des_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/line1"
+        android:layout_marginBottom="@dimen/pxtodp16"
+        android:layout_marginLeft="@dimen/pxtodp20"
+        android:layout_marginTop="@dimen/pxtodp30"
+        android:singleLine="true"
+        android:text="款式"
+        android:textColor="@color/register_black_text"
+        android:textSize="@dimen/pxtosp30" />
+
+    <cn.nj.www.my_module.view.FlowLayout
+        android:id="@+id/des_fl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/des_tv"
+        android:layout_marginLeft="@dimen/pxtodp10"
+        android:layout_marginRight="@dimen/pxtodp10"
+        android:visibility="gone" />
+
+    <View
+        android:id="@+id/line2"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/pxtodp1"
+        android:layout_below="@+id/des_fl"
+        android:layout_marginTop="@dimen/pxtodp26"
+        android:background="@drawable/line_view" />
+
+    <RelativeLayout
+        android:id="@+id/num_rl"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/pxtodp92"
+        android:layout_below="@+id/line2"
+        android:layout_marginLeft="@dimen/pxtodp32"
+        android:layout_marginRight="@dimen/pxtodp20">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="@dimen/pxtodp36"
+            android:text="购买数量"
+            android:textColor="@color/register_black_text"
+            android:textSize="@dimen/pxtosp30" />
+
+        <cn.nj.www.my_module.view.PlusMinusBar
+            android:id="@+id/num_bar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="@dimen/pxtodp10"
+            android:layout_marginTop="@dimen/pxtodp10"></cn.nj.www.my_module.view.PlusMinusBar>
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/line3"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/pxtodp1"
+        android:layout_below="@+id/num_rl"
+        android:background="@drawable/line_view" />
+
+    <RelativeLayout
+        android:id="@+id/operate_rl"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/pxtodp100"
+        android:layout_below="@+id/line3"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/addBuy_bn"
+            android:layout_width="@dimen/pxtodp220"
+            android:layout_height="@dimen/pxtodp60"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/pxtodp100"
+            android:background="@drawable/yellow_rec_normal"
+            android:text="添加到购物车"
+            android:textColor="@color/white"
+            android:textSize="@dimen/pxtosp26" />
+
+        <Button
+            android:id="@+id/buy_bn"
+            android:layout_width="@dimen/pxtodp220"
+            android:layout_height="@dimen/pxtodp60"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/pxtodp100"
+            android:background="@drawable/pink_button"
+            android:text="立即购买"
+            android:textColor="@color/white"
+            android:textSize="@dimen/pxtosp26" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/pxtodp1"
+        android:layout_below="@+id/operate_rl"
+        android:background="@drawable/line_view" />
+</RelativeLayout>

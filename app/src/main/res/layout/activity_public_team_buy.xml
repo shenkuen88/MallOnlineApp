@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/llContent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/common_back"
+        layout="@layout/layout_top"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/pxtodp1"
+        android:background="@color/ef"/>
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                style="@style/publicTeamBuy"
+                android:layout_below="@+id/line1">
+
+                <TextView
+                    style="@style/publicTeamBuyTvLeft"
+                    android:text="商品名称"/>
+
+                <cn.nj.www.my_module.view.ClearEditText
+                    android:id="@+id/tvTitle"
+                    style="@style/publicTeamBuyTvRight"
+                    android:gravity="right|center_vertical"
+                    android:hint="请填写商品名称"/>
+            </LinearLayout>
+
+            <View
+                style="@style/line"/>
+
+            <LinearLayout
+                style="@style/publicTeamBuy"
+                android:layout_below="@+id/line1">
+
+                <TextView
+                    style="@style/publicTeamBuyTvLeft"
+                    android:layout_weight="1"
+                    android:text="截止时间"/>
+
+                <TextView
+                    android:id="@+id/tvEndTime"
+                    style="@style/publicTeamBuyTvRight"
+                    android:gravity="right|center_vertical"
+                    android:hint="请选择 "
+                    />
+            </LinearLayout>
+
+            <include
+                layout="@layout/line_view"/>
+
+            <LinearLayout
+                style="@style/publicTeamBuy"
+                android:layout_below="@+id/line1">
+
+                <TextView
+                    style="@style/publicTeamBuyTvLeft"
+                    android:layout_weight="1"
+                    android:text="标注位置"/>
+
+                <TextView
+                    android:id="@+id/tvLocation"
+                    style="@style/publicTeamBuyTvRight"
+                    android:gravity="right|center_vertical"
+                    android:text="南京"/>
+            </LinearLayout>
+
+            <include
+                layout="@layout/line_view"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/ef"
+                android:paddingBottom="@dimen/pxtodp26"
+                android:paddingLeft="@dimen/pxtodp30"
+                android:text="销售规格设置"
+                android:textColor="@color/a9b"
+                android:textSize="@dimen/pxtosp34"/>
+
+            <LinearLayout
+                style="@style/publicTeamBuy"
+                android:layout_below="@+id/line1">
+
+                <TextView
+                    style="@style/publicTeamBuyTvLeft"
+                    android:layout_weight="1"
+                    android:text="拼团价格"/>
+
+                <cn.nj.www.my_module.view.ClearEditText
+                    android:id="@+id/tvPrice"
+                    style="@style/publicTeamBuyTvRight"
+                    android:gravity="right|center_vertical"
+                    android:hint="请填写商品价格"
+                    android:inputType="numberDecimal"/>
+            </LinearLayout>
+
+            <View
+                style="@style/line"/>
+
+            <LinearLayout
+                style="@style/publicTeamBuy"
+                android:layout_below="@+id/line1">
+
+                <TextView
+                    style="@style/publicTeamBuyTvLeft"
+                    android:layout_weight="1"
+                    android:text="人数不限"/>
+
+                <cn.nj.www.my_module.view.switchbn.SwitchButton
+                    android:id="@+id/sbn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"/>
+            </LinearLayout>
+
+            <View
+                style="@style/line"/>
+
+            <LinearLayout
+                android:id="@+id/llSetNum"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    style="@style/publicTeamBuy"
+                    android:layout_below="@+id/line1">
+
+                    <TextView
+                        style="@style/publicTeamBuyTvLeft"
+                        android:layout_weight="1"
+                        android:text="起拍人数"/>
+
+                    <cn.nj.www.my_module.view.ClearEditText
+                        android:id="@+id/cetMinNum"
+                        style="@style/publicTeamBuyTvRight"
+                        android:gravity="right|center_vertical"
+                        android:hint="请填写起拍人数"
+                        android:inputType="number"/>
+                </LinearLayout>
+
+                <View
+                    style="@style/line"/>
+
+                <LinearLayout
+                    style="@style/publicTeamBuy"
+                    android:layout_below="@+id/line1">
+
+                    <TextView
+                        style="@style/publicTeamBuyTvLeft"
+                        android:layout_weight="1"
+                        android:text="最多人数"/>
+
+                    <cn.nj.www.my_module.view.ClearEditText
+                        android:id="@+id/cetMaxNum"
+                        style="@style/publicTeamBuyTvRight"
+                        android:gravity="right|center_vertical"
+                        android:hint="请填写最多人数"
+                        android:inputType="number"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <View
+                style="@style/line"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/ef"
+                android:paddingBottom="@dimen/pxtodp26"
+                android:paddingLeft="@dimen/pxtodp30"
+                android:paddingTop="@dimen/pxtodp26"
+                android:text="商品描述"
+                android:textColor="@color/a9b"
+                android:textSize="@dimen/pxtosp36"/>
+
+            <EditText
+                android:id="@+id/tvDes"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/pxtodp300"
+                android:background="@color/white_color"
+                android:gravity="top|left"
+                android:hint="介绍一下你的产品吧，200个字以内就可以哦"
+                android:padding="@dimen/pxtodp30"
+                android:textColor="@color/title_black"
+                android:textSize="@dimen/pxtodp30"/>
+
+            <TextView
+                android:id="@+id/tvUpload"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/ef"
+                android:paddingBottom="@dimen/pxtodp30"
+                android:paddingLeft="@dimen/pxtodp30"
+                android:paddingTop="@dimen/pxtodp30"
+                android:text="上传照片"
+                android:textColor="@color/a9b"
+                android:textSize="@dimen/pxtosp36"/>
+
+            <GridView
+                android:id="@+id/gridview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/ef"
+                android:horizontalSpacing="3dp"
+                android:numColumns="4"
+                android:padding="@dimen/pxtodp10"
+                android:scrollbars="none"
+                android:verticalSpacing="5dp"></GridView>
+
+            <Button
+                android:id="@+id/bnSubmit"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/pxtodp90"
+                android:layout_marginBottom="@dimen/pxtodp40"
+                android:layout_marginLeft="@dimen/pxtodp30"
+                android:layout_marginRight="@dimen/pxtodp30"
+                android:layout_marginTop="@dimen/pxtodp54"
+                android:background="@drawable/common_pink_bn"
+                android:text="提出审核"
+                android:textColor="@color/white_color"
+                android:textSize="@dimen/pxtosp34"/>
+
+            <View
+                android:id="@+id/hideView"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/pxtodp1"
+                android:background="@color/ef"/>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

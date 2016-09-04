@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_col"
+    android:orientation="vertical">
+
+
+    <include
+        android:id="@+id/common_back"
+        layout="@layout/layout_top" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/pxtodp1"
+        android:background="@color/line" />
+
+    <EditText
+        android:id="@+id/title_et"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/pxtodp92"
+        android:background="@color/white_color"
+        android:hint="请输入标题"
+        android:paddingLeft="@dimen/pxtodp30"
+        android:singleLine="true"
+        android:textColor="@color/txt_nol_col"
+        android:textSize="@dimen/pxtosp32" />
+
+    <EditText
+        android:id="@+id/content_et"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/pxtodp180"
+        android:layout_marginBottom="@dimen/pxtodp20"
+        android:layout_marginTop="@dimen/pxtodp2"
+        android:background="@color/white_color"
+        android:gravity="top|left"
+        android:hint="请输入内容"
+        android:paddingBottom="@dimen/pxtodp24"
+        android:paddingLeft="@dimen/pxtodp30"
+        android:paddingRight="@dimen/pxtodp30"
+        android:paddingTop="@dimen/pxtodp24"
+        android:singleLine="true"
+        android:textColor="@color/txt_nol_col"
+        android:textSize="@dimen/pxtosp32" />
+
+    <GridView
+        android:id="@+id/gridview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/white_color"
+        android:horizontalSpacing="3dp"
+        android:numColumns="3"
+        android:padding="@dimen/pxtodp10"
+        android:scrollbars="none"
+        android:verticalSpacing="5dp"></GridView>
+
+</LinearLayout>

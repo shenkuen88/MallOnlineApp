@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/des_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/line1"
+        android:layout_marginBottom="@dimen/pxtodp16"
+        android:layout_marginLeft="@dimen/pxtodp20"
+        android:layout_marginTop="@dimen/pxtodp30"
+        android:singleLine="true"
+        android:text="品牌"
+        android:textColor="@color/register_black_text"
+        android:textSize="@dimen/pxtosp30" />
+
+    <cn.nj.www.my_module.view.FlowLayout
+        android:id="@+id/des_fl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/des_tv"
+        android:layout_marginLeft="@dimen/pxtodp10"
+        android:layout_marginRight="@dimen/pxtodp10"
+        android:visibility="gone" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/pxtodp1"
+        android:background="@drawable/line_view" />
+</LinearLayout>

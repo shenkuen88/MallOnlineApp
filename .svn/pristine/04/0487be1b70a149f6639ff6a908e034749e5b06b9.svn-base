@@ -1,0 +1,91 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/whole_bg"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.0">
+
+        <cn.nj.www.my_module.view.VerticalViewPager
+            android:id="@+id/vertical_viewpager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+
+    </RelativeLayout>
+
+    <!--底部布局-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/pxtodp94"
+        android:layout_alignParentBottom="true"
+        android:background="@color/fc">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/pxtodp1"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/line_view" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toLeftOf="@+id/addBuy_bn"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/service_tv"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:drawableTop="@mipmap/icon_service"
+                android:gravity="center"
+                android:paddingBottom="@dimen/pxtodp8"
+                android:paddingTop="@dimen/pxtodp10"
+                android:text="客服"
+                android:textSize="@dimen/pxtodp22" />
+
+            <TextView
+                android:id="@+id/collect_tv"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_toRightOf="@+id/service_tv"
+                android:layout_weight="1"
+                android:drawableTop="@mipmap/no_collect"
+                android:gravity="center"
+                android:paddingBottom="@dimen/pxtodp8"
+                android:drawablePadding="@dimen/pxtodp6"
+                android:paddingTop="@dimen/pxtodp20"
+                android:text="收藏"
+                android:textSize="@dimen/pxtodp22" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/addBuy_bn"
+            android:layout_width="@dimen/pxtodp190"
+            android:layout_height="@dimen/pxtodp60"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/pxtodp32"
+            android:layout_toLeftOf="@+id/buy_bn"
+            android:background="@drawable/yellow_rec_normal"
+            android:text="添加到购物车"
+            android:textColor="@color/white"
+            android:textSize="@dimen/pxtosp26" />
+
+        <Button
+            android:id="@+id/buy_bn"
+            android:layout_width="@dimen/pxtodp190"
+            android:layout_height="@dimen/pxtodp60"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/pxtodp20"
+            android:background="@drawable/pink_button"
+            android:text="立即购买"
+            android:textColor="@color/white"
+            android:textSize="@dimen/pxtosp26" />
+    </RelativeLayout>
+</LinearLayout>

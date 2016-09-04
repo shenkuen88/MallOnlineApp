@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/common_back"
+        layout="@layout/layout_top"/>
+
+    <View
+        android:id="@+id/line1"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/pxtodp1"
+        android:layout_below="@+id/common_back"
+        android:background="@color/line"/>
+
+    <LinearLayout
+        android:id="@+id/content_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/line1"
+        android:orientation="vertical">
+
+
+        <cn.nj.www.my_module.view.banner.ConvenientBanner
+            android:id="@+id/index_banner"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/pxtodp200"/>
+
+        <ListView
+            android:id="@+id/lvBuy"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/transparent"
+            android:descendantFocusability="afterDescendants"
+            android:divider="@drawable/line_view"
+            android:dividerHeight="@dimen/pxtodp1"
+            android:overScrollMode="never"
+            android:scrollbars="none"
+            />
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/four_rl"
+    android:layout_width="@dimen/pxtodp348"
+    android:layout_height="@dimen/pxtodp222"
+    android:background="@color/money_main_invest_detail_ba">
+
+    <TextView
+        android:id="@+id/good_name_tv"
+        android:layout_width="@dimen/pxtodp128"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/left_info_rl"
+        android:gravity="center_horizontal"
+        android:textColor="@color/register_black_text"
+        android:textSize="@dimen/pxtosp28" />
+
+
+    <RelativeLayout
+        android:id="@+id/left_info_rl"
+        android:layout_width="@dimen/pxtodp180"
+        android:layout_height="@dimen/pxtodp180"
+        android:layout_centerVertical="true"
+        android:layout_marginBottom="@dimen/pxtodp20"
+        android:layout_marginLeft="@dimen/pxtodp26"
+        android:layout_marginTop="@dimen/pxtodp20">
+
+        <ImageView
+            android:id="@+id/good_iv"
+            android:layout_width="@dimen/pxtodp180"
+            android:layout_height="@dimen/pxtodp180" />
+
+        <ImageView
+            android:id="@+id/good_img_iv"
+            android:layout_width="@dimen/pxtodp128"
+            android:layout_height="@dimen/pxtodp128"
+            android:layout_centerInParent="true"
+            android:scaleType="fitXY"
+            android:src="@drawable/default_bg" />
+    </RelativeLayout>
+
+
+</RelativeLayout>

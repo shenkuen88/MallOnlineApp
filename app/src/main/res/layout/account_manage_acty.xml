@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/common_back"
+        layout="@layout/layout_top" />
+
+    <View
+        android:id="@+id/line1"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/pxtodp1"
+        android:layout_below="@+id/common_back"
+        android:background="@color/line" />
+
+    <RelativeLayout
+        android:id="@+id/head_rl"
+        style="@style/account_manage_head_rl"
+        android:layout_below="@+id/line1">
+
+        <TextView
+            android:id="@+id/order_tv"
+            style="@style/account_manage_tv"
+            android:text="头像" />
+
+        <ImageView
+            android:id="@+id/my_head_iv"
+            android:layout_width="@dimen/pxtodp100"
+            android:layout_height="@dimen/pxtodp100"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/right_iv1"
+            android:src="@drawable/default_head" />
+
+        <ImageView
+            android:id="@+id/right_iv1"
+            style="@style/mine_top_select_tv" />
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/pxtodp1"
+            android:layout_alignLeft="@+id/order_tv"
+            android:layout_alignParentBottom="true"
+            android:background="@color/line" />
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/user_name_rl"
+        style="@style/mine_top_select_rl"
+        android:layout_below="@+id/head_rl">
+
+        <TextView
+            android:id="@+id/user_name_tv1"
+            style="@style/account_manage_tv"
+            android:text="用户名" />
+
+
+        <TextView
+            android:id="@+id/user_name_tv"
+            style="@style/mine_right_arrow_tv"
+            android:layout_marginRight="@dimen/pxtodp24"
+            android:text="@string/no_data" />
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/pxtodp1"
+            android:layout_alignLeft="@+id/user_name_tv1"
+            android:layout_alignParentBottom="true"
+            android:background="@color/line" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/nick_rl"
+        style="@style/mine_top_select_rl"
+        android:layout_below="@+id/user_name_rl">
+
+        <TextView
+            android:id="@+id/user_nick_tv1"
+            style="@style/account_manage_tv"
+            android:text="昵称" />
+
+
+        <TextView
+            android:id="@+id/user_nick_tv"
+            style="@style/mine_right_arrow_tv"
+            android:drawablePadding="@dimen/pxtodp20"
+            android:drawableRight="@mipmap/listright_arrow"
+            android:text="@string/no_data" />
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/pxtodp1"
+            android:layout_alignLeft="@+id/user_nick_tv1"
+            android:layout_alignParentBottom="true"
+            android:background="@color/line" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/sex_rl"
+        style="@style/mine_top_select_rl"
+        android:layout_below="@+id/nick_rl">
+
+        <TextView
+            android:id="@+id/user_sex_tv1"
+            style="@style/account_manage_tv"
+            android:text="性别" />
+
+
+        <TextView
+            android:id="@+id/user_sex_tv"
+            style="@style/mine_right_arrow_tv"
+            android:drawablePadding="@dimen/pxtodp20"
+            android:drawableRight="@mipmap/listright_arrow"
+            android:text="@string/no_data" />
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/pxtodp1"
+            android:layout_alignLeft="@+id/user_sex_tv1"
+            android:layout_alignParentBottom="true"
+            android:background="@color/line" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/birth_rl"
+        style="@style/mine_top_select_rl"
+        android:layout_below="@+id/sex_rl">
+
+        <TextView
+            android:id="@+id/user_birth_tv1"
+            style="@style/account_manage_tv"
+            android:text="出生日期" />
+
+
+        <TextView
+            android:id="@+id/user_birth_tv"
+            style="@style/mine_right_arrow_tv"
+            android:drawablePadding="@dimen/pxtodp20"
+            android:drawableRight="@mipmap/listright_arrow"
+            android:text="@string/no_data" />
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

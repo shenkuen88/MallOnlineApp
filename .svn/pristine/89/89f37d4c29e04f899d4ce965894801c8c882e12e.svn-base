@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/white_color"
+              android:orientation="vertical">
+
+    <include
+        android:id="@+id/common_back"
+        layout="@layout/layout_top"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/pxtodp1"
+        android:background="@color/line"/>
+
+    <RelativeLayout
+        android:id="@+id/address_rl"
+        style="@style/mine_top_select_rl"
+        >
+
+
+        <TextView
+            style="@style/mine_top_select_left"
+            android:text="aaaaaa"/>
+
+        <TextView
+            android:id="@+id/tvRecharge"
+            style="@style/mine_top_select_tv"
+            android:text="aaaaaa"/>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/pxtodp1"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="@dimen/pxtodp30"
+            android:background="@color/line"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        style="@style/mine_top_select_rl"
+        >
+
+
+        <TextView
+            style="@style/mine_top_select_left"
+            android:text="aaaaaa"/>
+
+        <TextView
+            android:id="@+id/tvLeft"
+            style="@style/mine_top_select_tv"
+            android:text="aaaaaa"/>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/pxtodp1"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="@dimen/pxtodp30"
+            android:background="@color/line"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        style="@style/mine_top_select_rl"
+        >
+
+
+        <TextView
+            style="@style/mine_top_select_left"
+            android:text="aaaaaa"/>
+
+        <TextView
+            android:id="@+id/tvNum"
+            style="@style/mine_top_select_tv"
+            android:text="aaaaaa"/>
+
+    </RelativeLayout>
+
+    <TextView
+        android:text="@string/no_data_show_short_text"
+        android:layout_width="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_height="wrap_content"/>
+    <Button
+        android:id="@+id/bnContinue"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/pxtodp90"
+        android:layout_marginLeft="@dimen/pxtodp30"
+        android:layout_marginRight="@dimen/pxtodp30"
+        android:layout_marginTop="@dimen/pxtodp42"
+        android:background="@drawable/common_pink_bn"
+        android:gravity="center"
+        android:text="继续充值"
+        android:textColor="@color/white_color"
+        android:textSize="@dimen/pxtosp36" />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/pxtodp90"
+        android:layout_marginLeft="@dimen/pxtodp30"
+        android:id="@+id/bnBack"
+        android:layout_marginRight="@dimen/pxtodp30"
+        android:layout_marginTop="@dimen/pxtodp42"
+        android:background="@drawable/gray_rec_click"
+        android:gravity="center"
+        android:text="返回首页"
+        android:textColor="@color/white_color"
+        android:textSize="@dimen/pxtosp36" />
+</LinearLayout>
