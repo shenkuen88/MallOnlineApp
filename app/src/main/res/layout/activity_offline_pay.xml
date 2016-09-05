@@ -18,12 +18,13 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/pxtodp22"
         android:orientation="horizontal">
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:layout_marginRight="@dimen/pxtodp30"
+            android:layout_marginLeft="@dimen/pxtodp36"
             android:gravity="center_vertical"
             android:text="消费总金额"
             android:textColor="@color/title_black"
@@ -32,21 +33,16 @@
         <cn.nj.www.my_module.view.ClearPasswordEditText
             android:id="@+id/app_login_psd_et"
             style="@style/register_input_user_infos_et"
+            android:layout_marginRight="@dimen/pxtodp36"
             android:inputType="textPassword"
             app:hint="请询问服务员后输入"
             />
     </LinearLayout>
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:gravity="center"
-        android:text="@string/no_data_show_short_text"
-        android:textColor="@color/app_color"/>
 
     <View
         android:layout_width="match_parent"
-        android:layout_height="@dimen/pxtodp24"
+        android:layout_height="@dimen/pxtodp30"
         android:background="@color/ef"/>
 
     <LinearLayout
@@ -64,6 +60,12 @@
             android:textColor="@color/register_black_text"
             android:textSize="@dimen/pxtosp30"/>
 
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/pxtodp1"
+            android:layout_marginLeft="@dimen/pxtodp30"
+            android:background="@color/ef"/>
+
         <RelativeLayout
             android:id="@+id/ye_rl"
             android:layout_width="match_parent"
@@ -76,7 +78,7 @@
                 android:layout_width="@dimen/pxtodp60"
                 android:layout_height="@dimen/pxtodp60"
                 android:layout_centerVertical="true"
-                android:src="@mipmap/zfb_icon"/>
+                android:src="@mipmap/icon_pay_ye"/>
 
             <TextView
                 android:layout_width="wrap_content"
@@ -84,7 +86,7 @@
                 android:layout_centerVertical="true"
                 android:layout_marginLeft="@dimen/pxtodp28"
                 android:layout_toRightOf="@+id/ye_iv"
-                android:text="余额支付"
+                android:text="账户支付"
                 android:textColor="@color/register_black_text"
                 android:textSize="@dimen/pxtosp30"/>
 
@@ -197,7 +199,7 @@
         android:layout_height="@dimen/pxtodp90"
         android:layout_marginLeft="@dimen/pxtodp30"
         android:layout_marginRight="@dimen/pxtodp30"
-        android:layout_marginTop="@dimen/pxtodp54"
+        android:layout_marginTop="@dimen/pxtodp70"
         android:background="@drawable/common_pink_bn"
         android:text="支付"
         android:textColor="@color/white_color"

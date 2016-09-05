@@ -1,51 +1,11 @@
 [
     {
-        "merged": "D:\\android_pros\\mynewmall\\MallOnlineApp\\easeui\\build\\intermediates\\res\\merged\\release\\drawable\\ease_search_clear.xml",
-        "source": "D:\\android_pros\\mynewmall\\MallOnlineApp\\easeui\\res\\drawable\\ease_search_clear.xml"
+        "merged": "D:\\android_pros\\mynewmall\\MallOnlineApp\\easeui\\build\\intermediates\\res\\merged\\release\\drawable\\ease_chat_location_selector.xml",
+        "source": "D:\\android_pros\\mynewmall\\MallOnlineApp\\easeui\\res\\drawable\\ease_chat_location_selector.xml"
     },
     {
-        "merged": "D:\\android_pros\\mynewmall\\MallOnlineApp\\easeui\\build\\intermediates\\res\\merged\\release\\drawable\\ease_chat_send_btn_selector.xml",
-        "source": "D:\\android_pros\\mynewmall\\MallOnlineApp\\easeui\\res\\drawable\\ease_chat_send_btn_selector.xml"
-    },
-    {
-        "merged": "D:\\android_pros\\mynewmall\\MallOnlineApp\\easeui\\build\\intermediates\\res\\merged\\release\\drawable\\ease_type_select_btn.xml",
-        "source": "D:\\android_pros\\mynewmall\\MallOnlineApp\\easeui\\res\\drawable\\ease_type_select_btn.xml"
-    },
-    {
-        "merged": "D:\\android_pros\\mynewmall\\MallOnlineApp\\easeui\\build\\intermediates\\res\\merged\\release\\drawable\\ease_recording_hint_bg.xml",
-        "source": "D:\\android_pros\\mynewmall\\MallOnlineApp\\easeui\\res\\drawable\\ease_recording_hint_bg.xml"
-    },
-    {
-        "merged": "D:\\android_pros\\mynewmall\\MallOnlineApp\\easeui\\build\\intermediates\\res\\merged\\release\\drawable\\ease_msg_state_failed_resend.xml",
-        "source": "D:\\android_pros\\mynewmall\\MallOnlineApp\\easeui\\res\\drawable\\ease_msg_state_failed_resend.xml"
-    },
-    {
-        "merged": "D:\\android_pros\\mynewmall\\MallOnlineApp\\easeui\\build\\intermediates\\res\\merged\\release\\drawable\\ease_mm_listitem_grey.xml",
-        "source": "D:\\android_pros\\mynewmall\\MallOnlineApp\\easeui\\res\\drawable\\ease_mm_listitem_grey.xml"
-    },
-    {
-        "merged": "D:\\android_pros\\mynewmall\\MallOnlineApp\\easeui\\build\\intermediates\\res\\merged\\release\\drawable\\ease_recording_text_hint_bg.xml",
-        "source": "D:\\android_pros\\mynewmall\\MallOnlineApp\\easeui\\res\\drawable\\ease_recording_text_hint_bg.xml"
-    },
-    {
-        "merged": "D:\\android_pros\\mynewmall\\MallOnlineApp\\easeui\\build\\intermediates\\res\\merged\\release\\drawable\\ease_chatto_bg.xml",
-        "source": "D:\\android_pros\\mynewmall\\MallOnlineApp\\easeui\\res\\drawable\\ease_chatto_bg.xml"
-    },
-    {
-        "merged": "D:\\android_pros\\mynewmall\\MallOnlineApp\\easeui\\build\\intermediates\\res\\merged\\release\\drawable\\ease_chat_image_selector.xml",
-        "source": "D:\\android_pros\\mynewmall\\MallOnlineApp\\easeui\\res\\drawable\\ease_chat_image_selector.xml"
-    },
-    {
-        "merged": "D:\\android_pros\\mynewmall\\MallOnlineApp\\easeui\\build\\intermediates\\res\\merged\\release\\drawable\\ease_btn_cancel_normal_shape.xml",
-        "source": "D:\\android_pros\\mynewmall\\MallOnlineApp\\easeui\\res\\drawable\\ease_btn_cancel_normal_shape.xml"
-    },
-    {
-        "merged": "D:\\android_pros\\mynewmall\\MallOnlineApp\\easeui\\build\\intermediates\\res\\merged\\release\\drawable\\ease_btn_cancel_pressed_shape.xml",
-        "source": "D:\\android_pros\\mynewmall\\MallOnlineApp\\easeui\\res\\drawable\\ease_btn_cancel_pressed_shape.xml"
-    },
-    {
-        "merged": "D:\\android_pros\\mynewmall\\MallOnlineApp\\easeui\\build\\intermediates\\res\\merged\\release\\drawable\\ease_btn_blue_selector.xml",
-        "source": "D:\\android_pros\\mynewmall\\MallOnlineApp\\easeui\\res\\drawable\\ease_btn_blue_selector.xml"
+        "merged": "E:\\androidPro\\oldpro\\nww\\MallOnlineApp\\easeui\\build\\intermediates\\res\\merged\\release\\drawable\\ease_chat_image_selector.xml",
+        "source": "E:\\androidPro\\oldpro\\nww\\MallOnlineApp\\easeui\\res\\drawable\\ease_chat_image_selector.xml"
     },
     {
         "merged": "D:\\android_pros\\mynewmall\\MallOnlineApp\\easeui\\build\\intermediates\\res\\merged\\release\\drawable\\ease_chatting_setmode_keyboard_btn.xml",
@@ -56,51 +16,195 @@
         "source": "D:\\android_pros\\mynewmall\\MallOnlineApp\\easeui\\res\\drawable\\ease_chat_takepic_selector.xml"
     },
     {
-        "merged": "D:\\android_pros\\mynewmall\\MallOnlineApp\\easeui\\build\\intermediates\\res\\merged\\release\\drawable\\ease_chatting_setmode_voice_btn.xml",
-        "source": "D:\\android_pros\\mynewmall\\MallOnlineApp\\easeui\\res\\drawable\\ease_chatting_setmode_voice_btn.xml"
+        "merged": "E:\\androidPro\\oldpro\\nww\\MallOnlineApp\\easeui\\build\\intermediates\\res\\merged\\release\\drawable\\ease_type_select_btn.xml",
+        "source": "E:\\androidPro\\oldpro\\nww\\MallOnlineApp\\easeui\\res\\drawable\\ease_type_select_btn.xml"
+    },
+    {
+        "merged": "D:\\android_pros\\mynewmall\\MallOnlineApp\\easeui\\build\\intermediates\\res\\merged\\release\\drawable\\ease_chat_send_btn_selector.xml",
+        "source": "D:\\android_pros\\mynewmall\\MallOnlineApp\\easeui\\res\\drawable\\ease_chat_send_btn_selector.xml"
+    },
+    {
+        "merged": "E:\\androidPro\\oldpro\\nww\\MallOnlineApp\\easeui\\build\\intermediates\\res\\merged\\release\\drawable\\ease_chat_press_speak_btn.xml",
+        "source": "E:\\androidPro\\oldpro\\nww\\MallOnlineApp\\easeui\\res\\drawable\\ease_chat_press_speak_btn.xml"
+    },
+    {
+        "merged": "E:\\androidPro\\oldpro\\nww\\MallOnlineApp\\easeui\\build\\intermediates\\res\\merged\\release\\drawable\\ease_btn_blue_selector.xml",
+        "source": "E:\\androidPro\\oldpro\\nww\\MallOnlineApp\\easeui\\res\\drawable\\ease_btn_blue_selector.xml"
+    },
+    {
+        "merged": "E:\\androidPro\\oldpro\\nww\\MallOnlineApp\\easeui\\build\\intermediates\\res\\merged\\release\\drawable\\ease_btn_cancel_normal_shape.xml",
+        "source": "E:\\androidPro\\oldpro\\nww\\MallOnlineApp\\easeui\\res\\drawable\\ease_btn_cancel_normal_shape.xml"
+    },
+    {
+        "merged": "D:\\android_pros\\mynewmall\\MallOnlineApp\\easeui\\build\\intermediates\\res\\merged\\release\\drawable\\ease_chatto_bg.xml",
+        "source": "D:\\android_pros\\mynewmall\\MallOnlineApp\\easeui\\res\\drawable\\ease_chatto_bg.xml"
+    },
+    {
+        "merged": "E:\\androidPro\\oldpro\\nww\\MallOnlineApp\\easeui\\build\\intermediates\\res\\merged\\release\\drawable\\ease_btn_blue_pressed_shape.xml",
+        "source": "E:\\androidPro\\oldpro\\nww\\MallOnlineApp\\easeui\\res\\drawable\\ease_btn_blue_pressed_shape.xml"
+    },
+    {
+        "merged": "D:\\android_pros\\mynewmall\\MallOnlineApp\\easeui\\build\\intermediates\\res\\merged\\release\\drawable\\ease_common_tab_bg.xml",
+        "source": "D:\\android_pros\\mynewmall\\MallOnlineApp\\easeui\\res\\drawable\\ease_common_tab_bg.xml"
+    },
+    {
+        "merged": "E:\\androidPro\\oldpro\\nww\\MallOnlineApp\\easeui\\build\\intermediates\\res\\merged\\release\\drawable\\ease_chat_takepic_selector.xml",
+        "source": "E:\\androidPro\\oldpro\\nww\\MallOnlineApp\\easeui\\res\\drawable\\ease_chat_takepic_selector.xml"
+    },
+    {
+        "merged": "E:\\androidPro\\oldpro\\nww\\MallOnlineApp\\easeui\\build\\intermediates\\res\\merged\\release\\drawable\\ease_chat_send_btn_selector.xml",
+        "source": "E:\\androidPro\\oldpro\\nww\\MallOnlineApp\\easeui\\res\\drawable\\ease_chat_send_btn_selector.xml"
+    },
+    {
+        "merged": "D:\\android_pros\\mynewmall\\MallOnlineApp\\easeui\\build\\intermediates\\res\\merged\\release\\drawable\\ease_type_select_btn.xml",
+        "source": "D:\\android_pros\\mynewmall\\MallOnlineApp\\easeui\\res\\drawable\\ease_type_select_btn.xml"
+    },
+    {
+        "merged": "D:\\android_pros\\mynewmall\\MallOnlineApp\\easeui\\build\\intermediates\\res\\merged\\release\\drawable\\ease_mm_listitem_grey.xml",
+        "source": "D:\\android_pros\\mynewmall\\MallOnlineApp\\easeui\\res\\drawable\\ease_mm_listitem_grey.xml"
+    },
+    {
+        "merged": "D:\\android_pros\\mynewmall\\MallOnlineApp\\easeui\\build\\intermediates\\res\\merged\\release\\drawable\\ease_btn_cancel_normal_shape.xml",
+        "source": "D:\\android_pros\\mynewmall\\MallOnlineApp\\easeui\\res\\drawable\\ease_btn_cancel_normal_shape.xml"
+    },
+    {
+        "merged": "E:\\androidPro\\oldpro\\nww\\MallOnlineApp\\easeui\\build\\intermediates\\res\\merged\\release\\drawable\\ease_recording_hint_bg.xml",
+        "source": "E:\\androidPro\\oldpro\\nww\\MallOnlineApp\\easeui\\res\\drawable\\ease_recording_hint_bg.xml"
     },
     {
         "merged": "D:\\android_pros\\mynewmall\\MallOnlineApp\\easeui\\build\\intermediates\\res\\merged\\release\\drawable\\ease_timestampe_bg.xml",
         "source": "D:\\android_pros\\mynewmall\\MallOnlineApp\\easeui\\res\\drawable\\ease_timestampe_bg.xml"
     },
     {
-        "merged": "D:\\android_pros\\mynewmall\\MallOnlineApp\\easeui\\build\\intermediates\\res\\merged\\release\\drawable\\ease_chat_location_selector.xml",
-        "source": "D:\\android_pros\\mynewmall\\MallOnlineApp\\easeui\\res\\drawable\\ease_chat_location_selector.xml"
+        "merged": "D:\\android_pros\\mynewmall\\MallOnlineApp\\easeui\\build\\intermediates\\res\\merged\\release\\drawable\\ease_btn_blue_pressed_shape.xml",
+        "source": "D:\\android_pros\\mynewmall\\MallOnlineApp\\easeui\\res\\drawable\\ease_btn_blue_pressed_shape.xml"
+    },
+    {
+        "merged": "E:\\androidPro\\oldpro\\nww\\MallOnlineApp\\easeui\\build\\intermediates\\res\\merged\\release\\drawable\\ease_search_clear.xml",
+        "source": "E:\\androidPro\\oldpro\\nww\\MallOnlineApp\\easeui\\res\\drawable\\ease_search_clear.xml"
+    },
+    {
+        "merged": "E:\\androidPro\\oldpro\\nww\\MallOnlineApp\\easeui\\build\\intermediates\\res\\merged\\release\\drawable\\ease_btn_cancel_bj.xml",
+        "source": "E:\\androidPro\\oldpro\\nww\\MallOnlineApp\\easeui\\res\\drawable\\ease_btn_cancel_bj.xml"
+    },
+    {
+        "merged": "D:\\android_pros\\mynewmall\\MallOnlineApp\\easeui\\build\\intermediates\\res\\merged\\release\\drawable\\ease_chatting_setmode_voice_btn.xml",
+        "source": "D:\\android_pros\\mynewmall\\MallOnlineApp\\easeui\\res\\drawable\\ease_chatting_setmode_voice_btn.xml"
     },
     {
         "merged": "D:\\android_pros\\mynewmall\\MallOnlineApp\\easeui\\build\\intermediates\\res\\merged\\release\\drawable\\ease_mm_listitem.xml",
         "source": "D:\\android_pros\\mynewmall\\MallOnlineApp\\easeui\\res\\drawable\\ease_mm_listitem.xml"
     },
     {
-        "merged": "D:\\android_pros\\mynewmall\\MallOnlineApp\\easeui\\build\\intermediates\\res\\merged\\release\\drawable\\ease_btn_blue_pressed_shape.xml",
-        "source": "D:\\android_pros\\mynewmall\\MallOnlineApp\\easeui\\res\\drawable\\ease_btn_blue_pressed_shape.xml"
+        "merged": "E:\\androidPro\\oldpro\\nww\\MallOnlineApp\\easeui\\build\\intermediates\\res\\merged\\release\\drawable\\ease_chatting_setmode_keyboard_btn.xml",
+        "source": "E:\\androidPro\\oldpro\\nww\\MallOnlineApp\\easeui\\res\\drawable\\ease_chatting_setmode_keyboard_btn.xml"
     },
     {
-        "merged": "D:\\android_pros\\mynewmall\\MallOnlineApp\\easeui\\build\\intermediates\\res\\merged\\release\\drawable\\ease_chatfrom_bg.xml",
-        "source": "D:\\android_pros\\mynewmall\\MallOnlineApp\\easeui\\res\\drawable\\ease_chatfrom_bg.xml"
+        "merged": "D:\\android_pros\\mynewmall\\MallOnlineApp\\easeui\\build\\intermediates\\res\\merged\\release\\drawable\\ease_recording_text_hint_bg.xml",
+        "source": "D:\\android_pros\\mynewmall\\MallOnlineApp\\easeui\\res\\drawable\\ease_recording_text_hint_bg.xml"
     },
     {
-        "merged": "D:\\android_pros\\mynewmall\\MallOnlineApp\\easeui\\build\\intermediates\\res\\merged\\release\\drawable\\ease_btn_cancel_bj.xml",
-        "source": "D:\\android_pros\\mynewmall\\MallOnlineApp\\easeui\\res\\drawable\\ease_btn_cancel_bj.xml"
+        "merged": "E:\\androidPro\\oldpro\\nww\\MallOnlineApp\\easeui\\build\\intermediates\\res\\merged\\release\\drawable\\ease_chat_location_selector.xml",
+        "source": "E:\\androidPro\\oldpro\\nww\\MallOnlineApp\\easeui\\res\\drawable\\ease_chat_location_selector.xml"
     },
     {
-        "merged": "D:\\android_pros\\mynewmall\\MallOnlineApp\\easeui\\build\\intermediates\\res\\merged\\release\\drawable\\ease_btn_blue_normal_shape.xml",
-        "source": "D:\\android_pros\\mynewmall\\MallOnlineApp\\easeui\\res\\drawable\\ease_btn_blue_normal_shape.xml"
+        "merged": "E:\\androidPro\\oldpro\\nww\\MallOnlineApp\\easeui\\build\\intermediates\\res\\merged\\release\\drawable\\ease_chatting_setmode_voice_btn.xml",
+        "source": "E:\\androidPro\\oldpro\\nww\\MallOnlineApp\\easeui\\res\\drawable\\ease_chatting_setmode_voice_btn.xml"
     },
     {
-        "merged": "D:\\android_pros\\mynewmall\\MallOnlineApp\\easeui\\build\\intermediates\\res\\merged\\release\\drawable\\ease_sidebar_background_pressed.xml",
-        "source": "D:\\android_pros\\mynewmall\\MallOnlineApp\\easeui\\res\\drawable\\ease_sidebar_background_pressed.xml"
+        "merged": "D:\\android_pros\\mynewmall\\MallOnlineApp\\easeui\\build\\intermediates\\res\\merged\\release\\drawable\\ease_recording_hint_bg.xml",
+        "source": "D:\\android_pros\\mynewmall\\MallOnlineApp\\easeui\\res\\drawable\\ease_recording_hint_bg.xml"
+    },
+    {
+        "merged": "E:\\androidPro\\oldpro\\nww\\MallOnlineApp\\easeui\\build\\intermediates\\res\\merged\\release\\drawable\\ease_edit_text_bg.xml",
+        "source": "E:\\androidPro\\oldpro\\nww\\MallOnlineApp\\easeui\\res\\drawable\\ease_edit_text_bg.xml"
+    },
+    {
+        "merged": "E:\\androidPro\\oldpro\\nww\\MallOnlineApp\\easeui\\build\\intermediates\\res\\merged\\release\\drawable\\ease_btn_cancel_pressed_shape.xml",
+        "source": "E:\\androidPro\\oldpro\\nww\\MallOnlineApp\\easeui\\res\\drawable\\ease_btn_cancel_pressed_shape.xml"
     },
     {
         "merged": "D:\\android_pros\\mynewmall\\MallOnlineApp\\easeui\\build\\intermediates\\res\\merged\\release\\drawable\\ease_chat_press_speak_btn.xml",
         "source": "D:\\android_pros\\mynewmall\\MallOnlineApp\\easeui\\res\\drawable\\ease_chat_press_speak_btn.xml"
     },
     {
+        "merged": "D:\\android_pros\\mynewmall\\MallOnlineApp\\easeui\\build\\intermediates\\res\\merged\\release\\drawable\\ease_sidebar_background_pressed.xml",
+        "source": "D:\\android_pros\\mynewmall\\MallOnlineApp\\easeui\\res\\drawable\\ease_sidebar_background_pressed.xml"
+    },
+    {
+        "merged": "D:\\android_pros\\mynewmall\\MallOnlineApp\\easeui\\build\\intermediates\\res\\merged\\release\\drawable\\ease_btn_cancel_bj.xml",
+        "source": "D:\\android_pros\\mynewmall\\MallOnlineApp\\easeui\\res\\drawable\\ease_btn_cancel_bj.xml"
+    },
+    {
+        "merged": "D:\\android_pros\\mynewmall\\MallOnlineApp\\easeui\\build\\intermediates\\res\\merged\\release\\drawable\\ease_chat_image_selector.xml",
+        "source": "D:\\android_pros\\mynewmall\\MallOnlineApp\\easeui\\res\\drawable\\ease_chat_image_selector.xml"
+    },
+    {
+        "merged": "D:\\android_pros\\mynewmall\\MallOnlineApp\\easeui\\build\\intermediates\\res\\merged\\release\\drawable\\ease_chatfrom_bg.xml",
+        "source": "D:\\android_pros\\mynewmall\\MallOnlineApp\\easeui\\res\\drawable\\ease_chatfrom_bg.xml"
+    },
+    {
+        "merged": "E:\\androidPro\\oldpro\\nww\\MallOnlineApp\\easeui\\build\\intermediates\\res\\merged\\release\\drawable\\ease_sidebar_background_pressed.xml",
+        "source": "E:\\androidPro\\oldpro\\nww\\MallOnlineApp\\easeui\\res\\drawable\\ease_sidebar_background_pressed.xml"
+    },
+    {
+        "merged": "D:\\android_pros\\mynewmall\\MallOnlineApp\\easeui\\build\\intermediates\\res\\merged\\release\\drawable\\ease_btn_cancel_pressed_shape.xml",
+        "source": "D:\\android_pros\\mynewmall\\MallOnlineApp\\easeui\\res\\drawable\\ease_btn_cancel_pressed_shape.xml"
+    },
+    {
+        "merged": "E:\\androidPro\\oldpro\\nww\\MallOnlineApp\\easeui\\build\\intermediates\\res\\merged\\release\\drawable\\ease_timestampe_bg.xml",
+        "source": "E:\\androidPro\\oldpro\\nww\\MallOnlineApp\\easeui\\res\\drawable\\ease_timestampe_bg.xml"
+    },
+    {
+        "merged": "E:\\androidPro\\oldpro\\nww\\MallOnlineApp\\easeui\\build\\intermediates\\res\\merged\\release\\drawable\\ease_mm_listitem_grey.xml",
+        "source": "E:\\androidPro\\oldpro\\nww\\MallOnlineApp\\easeui\\res\\drawable\\ease_mm_listitem_grey.xml"
+    },
+    {
+        "merged": "E:\\androidPro\\oldpro\\nww\\MallOnlineApp\\easeui\\build\\intermediates\\res\\merged\\release\\drawable\\ease_mm_listitem.xml",
+        "source": "E:\\androidPro\\oldpro\\nww\\MallOnlineApp\\easeui\\res\\drawable\\ease_mm_listitem.xml"
+    },
+    {
         "merged": "D:\\android_pros\\mynewmall\\MallOnlineApp\\easeui\\build\\intermediates\\res\\merged\\release\\drawable\\ease_edit_text_bg.xml",
         "source": "D:\\android_pros\\mynewmall\\MallOnlineApp\\easeui\\res\\drawable\\ease_edit_text_bg.xml"
     },
     {
-        "merged": "D:\\android_pros\\mynewmall\\MallOnlineApp\\easeui\\build\\intermediates\\res\\merged\\release\\drawable\\ease_common_tab_bg.xml",
-        "source": "D:\\android_pros\\mynewmall\\MallOnlineApp\\easeui\\res\\drawable\\ease_common_tab_bg.xml"
+        "merged": "D:\\android_pros\\mynewmall\\MallOnlineApp\\easeui\\build\\intermediates\\res\\merged\\release\\drawable\\ease_msg_state_failed_resend.xml",
+        "source": "D:\\android_pros\\mynewmall\\MallOnlineApp\\easeui\\res\\drawable\\ease_msg_state_failed_resend.xml"
+    },
+    {
+        "merged": "D:\\android_pros\\mynewmall\\MallOnlineApp\\easeui\\build\\intermediates\\res\\merged\\release\\drawable\\ease_btn_blue_normal_shape.xml",
+        "source": "D:\\android_pros\\mynewmall\\MallOnlineApp\\easeui\\res\\drawable\\ease_btn_blue_normal_shape.xml"
+    },
+    {
+        "merged": "E:\\androidPro\\oldpro\\nww\\MallOnlineApp\\easeui\\build\\intermediates\\res\\merged\\release\\drawable\\ease_btn_blue_normal_shape.xml",
+        "source": "E:\\androidPro\\oldpro\\nww\\MallOnlineApp\\easeui\\res\\drawable\\ease_btn_blue_normal_shape.xml"
+    },
+    {
+        "merged": "E:\\androidPro\\oldpro\\nww\\MallOnlineApp\\easeui\\build\\intermediates\\res\\merged\\release\\drawable\\ease_chatfrom_bg.xml",
+        "source": "E:\\androidPro\\oldpro\\nww\\MallOnlineApp\\easeui\\res\\drawable\\ease_chatfrom_bg.xml"
+    },
+    {
+        "merged": "E:\\androidPro\\oldpro\\nww\\MallOnlineApp\\easeui\\build\\intermediates\\res\\merged\\release\\drawable\\ease_common_tab_bg.xml",
+        "source": "E:\\androidPro\\oldpro\\nww\\MallOnlineApp\\easeui\\res\\drawable\\ease_common_tab_bg.xml"
+    },
+    {
+        "merged": "E:\\androidPro\\oldpro\\nww\\MallOnlineApp\\easeui\\build\\intermediates\\res\\merged\\release\\drawable\\ease_chatto_bg.xml",
+        "source": "E:\\androidPro\\oldpro\\nww\\MallOnlineApp\\easeui\\res\\drawable\\ease_chatto_bg.xml"
+    },
+    {
+        "merged": "D:\\android_pros\\mynewmall\\MallOnlineApp\\easeui\\build\\intermediates\\res\\merged\\release\\drawable\\ease_search_clear.xml",
+        "source": "D:\\android_pros\\mynewmall\\MallOnlineApp\\easeui\\res\\drawable\\ease_search_clear.xml"
+    },
+    {
+        "merged": "E:\\androidPro\\oldpro\\nww\\MallOnlineApp\\easeui\\build\\intermediates\\res\\merged\\release\\drawable\\ease_msg_state_failed_resend.xml",
+        "source": "E:\\androidPro\\oldpro\\nww\\MallOnlineApp\\easeui\\res\\drawable\\ease_msg_state_failed_resend.xml"
+    },
+    {
+        "merged": "D:\\android_pros\\mynewmall\\MallOnlineApp\\easeui\\build\\intermediates\\res\\merged\\release\\drawable\\ease_btn_blue_selector.xml",
+        "source": "D:\\android_pros\\mynewmall\\MallOnlineApp\\easeui\\res\\drawable\\ease_btn_blue_selector.xml"
+    },
+    {
+        "merged": "E:\\androidPro\\oldpro\\nww\\MallOnlineApp\\easeui\\build\\intermediates\\res\\merged\\release\\drawable\\ease_recording_text_hint_bg.xml",
+        "source": "E:\\androidPro\\oldpro\\nww\\MallOnlineApp\\easeui\\res\\drawable\\ease_recording_text_hint_bg.xml"
     }
 ]

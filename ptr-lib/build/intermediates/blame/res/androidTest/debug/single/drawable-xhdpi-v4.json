@@ -1,5 +1,9 @@
 [
     {
+        "merged": "E:\\androidPro\\oldpro\\nww\\MallOnlineApp\\ptr-lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\ptr_rotate_arrow.png",
+        "source": "E:\\androidPro\\oldpro\\nww\\MallOnlineApp\\ptr-lib\\build\\intermediates\\bundles\\debug\\res\\drawable-xhdpi-v4\\ptr_rotate_arrow.png"
+    },
+    {
         "merged": "D:\\android_pros\\mynewmall\\MallOnlineApp\\ptr-lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\ptr_rotate_arrow.png",
         "source": "D:\\android_pros\\mynewmall\\MallOnlineApp\\ptr-lib\\build\\intermediates\\bundles\\debug\\res\\drawable-xhdpi-v4\\ptr_rotate_arrow.png"
     }

@@ -6,15 +6,17 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AbsListView;
+import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.ListView;
+import android.widget.RatingBar;
 import android.widget.TextView;
 
 import com.nannong.mall.R;
 import com.nannong.mall.response.index.BannerListBean;
 import com.nannong.mall.response.index.IndexBannerResponse;
+import com.nannong.mall.response.index.OfflineServiceResponse;
 import com.nannong.mall.response.index.OnlineShopListResponse;
-import com.nannong.mall.response.index.OrderResponse;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -60,9 +62,9 @@ public class OffLineServiceActivity extends BaseActivity implements View.OnClick
 
     private int loadPage = 1;
 
-    private CommonAdapter<OrderResponse.OrderListBean> lvAdapter;
+    private CommonAdapter<OfflineServiceResponse.ShopListBean> lvAdapter;
 
-    private List<OrderResponse.OrderListBean> datas = new ArrayList<OrderResponse.OrderListBean>();
+    private List<OfflineServiceResponse.ShopListBean> datas = new ArrayList<OfflineServiceResponse.ShopListBean>();
 
     private int tolcount = 0;
 
@@ -114,12 +116,27 @@ public class OffLineServiceActivity extends BaseActivity implements View.OnClick
 
     private void initAdapter()
     {
-        lvAdapter = new CommonAdapter<OrderResponse.OrderListBean>(mContext, datas, R.layout.item_offline_service)
+        lvAdapter = new CommonAdapter<OfflineServiceResponse.ShopListBean>(mContext, datas, R.layout.item_offline_service)
         {
             @Override
-            public void convert(ViewHolder helper, final OrderResponse.OrderListBean item)
+            public void convert(ViewHolder helper, final OfflineServiceResponse.ShopListBean item)
             {
+                ImageView ivIcon = helper.getView(R.id.ivIcon);
+                GeneralUtils.setImageViewWithUrl(mContext, item.getPicUrl(), ivIcon, R.drawable.default_bg);
+                helper.setText(R.id.tvTitle, item.getShopName());
+                RatingBar star_rb = helper.getView(R.id.star_rb);
+                star_rb.setRating(Integer.parseInt(item.getScore() + ""));
+                helper.setText(R.id.tvRating, item.getScore() + "");
+                helper.setText(R.id.tvCost, "人均" + item.getAveage() + "元");
+                helper.setText(R.id.tvDistance, item.getDistance());
+                helper.getView(R.id.rlAll).setOnClickListener(new View.OnClickListener()
+                {
+                    @Override
+                    public void onClick(View v)
+                    {
 
+                    }
+                });
             }
         };
         lvTeamBuy.setAdapter(lvAdapter);
@@ -265,13 +282,14 @@ public class OffLineServiceActivity extends BaseActivity implements View.OnClick
                 }
             }
 
-            if (tag.equals(OrderResponse.class.getName()))
+            if (tag.equals(OfflineServiceResponse.class.getName()))
             {
                 llLoading.setVisibility(View.GONE);
                 tvSeeMoreDate.setVisibility(View.VISIBLE);
                 if (GeneralUtils.isNotNullOrZeroLenght(result))
                 {
-                    OrderResponse orderResponse = GsonHelper.toType(result, OrderResponse.class);
+                    CMLog.e(Constants.HTTP_TAG, result);
+                    OfflineServiceResponse orderResponse = GsonHelper.toType(result, OfflineServiceResponse.class);
                     if (Constants.SUCESS_CODE.equals(orderResponse.getResultCode()))
                     {
                         if (loadPage == 1)
@@ -280,7 +298,7 @@ public class OffLineServiceActivity extends BaseActivity implements View.OnClick
                         }
                         page = loadPage;
                         tolcount = orderResponse.getTotalCount();
-                        datas.addAll(orderResponse.getOrderList());
+                        datas.addAll(orderResponse.getShopList());
                         lvAdapter.setData(datas);
                         lvAdapter.notifyDataSetChanged();
                         isloading = false;

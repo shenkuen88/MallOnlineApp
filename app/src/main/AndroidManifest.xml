@@ -524,6 +524,7 @@
         <activity android:name=".activity.mine.CouponsActivity"></activity>
         <activity android:name=".activity.mine.BillListActivity"></activity>
         <activity android:name=".activity.mine.MyPinTuanActivity"></activity>
+        <activity android:name=".activity.index.OfflineShopActy"></activity>
     </application>
 
 </manifest>

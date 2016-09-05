@@ -10,6 +10,7 @@ public class ShopBean
 
 
     private String shopID;
+    private String category;
 
     private int type;
 
@@ -36,6 +37,16 @@ public class ShopBean
     private int status;
 
     private String createTime;
+
+    public String getCategory()
+    {
+        return category;
+    }
+
+    public void setCategory(String category)
+    {
+        this.category = category;
+    }
 
     public String getShopID()
     {

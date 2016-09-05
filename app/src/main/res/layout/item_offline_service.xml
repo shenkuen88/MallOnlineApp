@@ -3,6 +3,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/pxtodp246"
                 android:gravity="center_vertical"
+                android:id="@+id/rlAll"
                 android:orientation="vertical"
                 android:paddingBottom="@dimen/pxtodp24"
                 android:paddingLeft="@dimen/pxtodp32"
@@ -51,6 +52,7 @@
             android:layout_marginLeft="@dimen/pxtodp26"
             android:text="5.0"
             android:textColor="#f5a823"
+            android:id="@+id/tvRating"
             android:textSize="@dimen/pxtosp32"/>
     </LinearLayout>
 
@@ -77,13 +79,15 @@
             android:id="@+id/tvDes"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_toLeftOf="@+id/tvNum"
+            android:layout_toLeftOf="@+id/tvDistance"
             android:gravity="left"
+            android:singleLine="true"
+            android:ellipsize="end"
             android:text="@string/no_data_show_short_text"
             android:textSize="@dimen/pxtosp30"/>
 
         <TextView
-            android:id="@+id/tvNum"
+            android:id="@+id/tvDistance"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentRight="true"

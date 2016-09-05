@@ -14,96 +14,144 @@
         android:layout_height="@dimen/pxtodp1"
         android:background="@color/line"/>
 
-    <RelativeLayout
-        android:id="@+id/address_rl"
-        style="@style/mine_top_select_rl"
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/pxtodp32"
         >
 
 
         <TextView
-            style="@style/mine_top_select_left"
-            android:text="aaaaaa"/>
+            android:layout_width="70dp"
+            android:layout_height="45dp"
+            android:gravity="center_vertical"
+            android:text="充值金额"
+            android:textColor="@color/register_black_text"
+            android:textSize="@dimen/pxtosp32"/>
 
         <TextView
             android:id="@+id/tvRecharge"
-            style="@style/mine_top_select_tv"
-            android:text="aaaaaa"/>
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginRight="15dp"
+            android:gravity="center_vertical|right"
+            android:text="请输入充值金额"
+            android:textColor="@color/app_color"
+            android:textSize="@dimen/pxtodp26"
+            android:textStyle="bold"/>
 
 
         <View
             android:layout_width="match_parent"
             android:layout_height="@dimen/pxtodp1"
             android:layout_alignParentBottom="true"
-            android:layout_marginLeft="@dimen/pxtodp30"
             android:background="@color/line"/>
-    </RelativeLayout>
+    </LinearLayout>
 
-    <RelativeLayout
-        style="@style/mine_top_select_rl"
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/pxtodp32"
         >
 
 
         <TextView
-            style="@style/mine_top_select_left"
-            android:text="aaaaaa"/>
+            android:layout_width="70dp"
+            android:layout_height="45dp"
+            android:gravity="center_vertical"
+            android:text="账号余额"
+            android:textColor="@color/register_black_text"
+            android:textSize="@dimen/pxtosp32"/>
 
         <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginRight="15dp"
+            android:gravity="center_vertical|right"
             android:id="@+id/tvLeft"
-            style="@style/mine_top_select_tv"
-            android:text="aaaaaa"/>
+            android:textColor="@color/app_color"
+            android:textSize="@dimen/pxtodp26"
+            android:textStyle="bold"/>
 
 
         <View
             android:layout_width="match_parent"
             android:layout_height="@dimen/pxtodp1"
             android:layout_alignParentBottom="true"
-            android:layout_marginLeft="@dimen/pxtodp30"
             android:background="@color/line"/>
-    </RelativeLayout>
+    </LinearLayout>
 
-    <RelativeLayout
-        style="@style/mine_top_select_rl"
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/pxtodp32"
         >
 
 
         <TextView
-            style="@style/mine_top_select_left"
-            android:text="aaaaaa"/>
+            android:layout_width="70dp"
+            android:layout_height="45dp"
+            android:gravity="center_vertical"
+            android:text="流水号"
+            android:textColor="@color/register_black_text"
+            android:textSize="@dimen/pxtosp32"/>
 
         <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginRight="15dp"
+            android:gravity="center_vertical|right"
             android:id="@+id/tvNum"
-            style="@style/mine_top_select_tv"
-            android:text="aaaaaa"/>
+            android:textColor="@color/txt_nol_col"
+            android:textSize="@dimen/pxtodp26"
+            android:textStyle="bold"
+            />
 
-    </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/pxtodp1"
+            android:layout_alignParentBottom="true"
+            android:background="@color/line"/>
+    </LinearLayout>
+
 
     <TextView
-        android:text="@string/no_data_show_short_text"
+        android:id="@+id/tvMoreRecord"
         android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
-        android:layout_height="wrap_content"/>
+        android:layout_marginTop="@dimen/pxtodp30"
+        android:text="查看账户充值记录"
+        android:textColor="#b0b0b0"
+        android:textSize="@dimen/pxtodp18"/>
+
     <Button
         android:id="@+id/bnContinue"
         android:layout_width="match_parent"
         android:layout_height="@dimen/pxtodp90"
         android:layout_marginLeft="@dimen/pxtodp30"
         android:layout_marginRight="@dimen/pxtodp30"
-        android:layout_marginTop="@dimen/pxtodp42"
+        android:layout_marginTop="@dimen/pxtodp52"
         android:background="@drawable/common_pink_bn"
         android:gravity="center"
         android:text="继续充值"
         android:textColor="@color/white_color"
-        android:textSize="@dimen/pxtosp36" />
+        android:textSize="@dimen/pxtosp36"/>
+
     <Button
+        android:id="@+id/bnBack"
         android:layout_width="match_parent"
         android:layout_height="@dimen/pxtodp90"
-        android:layout_marginLeft="@dimen/pxtodp30"
-        android:id="@+id/bnBack"
+        android:layout_marginLeft="@dimen/pxtodp16"
         android:layout_marginRight="@dimen/pxtodp30"
         android:layout_marginTop="@dimen/pxtodp42"
         android:background="@drawable/gray_rec_click"
         android:gravity="center"
         android:text="返回首页"
         android:textColor="@color/white_color"
-        android:textSize="@dimen/pxtosp36" />
+        android:textSize="@dimen/pxtosp36"/>
 </LinearLayout>
